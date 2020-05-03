@@ -52,14 +52,24 @@ CREATE TABLE comprasUsuarios(
 	fechaVenta    VARCHAR (255),
 	totalVenta    VARCHAR (255),
 	descripcion   VARCHAR (255),
-    formadepago INT,
+    idPagos INT,
     idUsuario INT,
     idLibro  INT,
     idEstado INT
 );
+
+/* creamos la tabla forma de pago*/
+
+CREATE TABLE formaPago(
+    idPagos INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    metodo VARCHAR(128),
+    idEstado INT
+);
+
 /*creamos la tabla libros, los libros son nuestro producto a vender*/
 CREATE TABLE libros(
 	idLibro   INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    imagen VARCHAR(255),
 	nombre     VARCHAR(255),
     autor    VARCHAR(255),
     editorial    VARCHAR(255),
@@ -72,15 +82,21 @@ CREATE TABLE libros(
 /* creamos la tabla categorias*/
 CREATE TABLE categorias(
     idCategorias INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    descripcionCate INT,
+    descripcionCate VARCHAR(128),
     idEstado INT
 );
 
+INSERT INTO categorias (descripcionCate,idEstado) VALUES ("Coleccion","1"),("Novela","1");
+
 CREATE TABLE subCategorias(
     idsubCategorias INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    subcategoria VARCHAR(255),
+    subCategoria VARCHAR(255),
     idEstado INT
 );
+
+INSERT INTO subCategorias (subCategoria,idEstado) VALUES ("Fantastica","1"),("Distòpica","1"),("Suspenso","1"),("Historica","1"),
+("Autobiografica","1"),("Psicologia","1"),("Grafica","1");
+
 /* uniones registros*/
 ALTER TABLE usuarios ADD CONSTRAINT fk_registro FOREIGN KEY (idRegistros) REFERENCES registros (idRegistros) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE usuarios ADD CONSTRAINT fk_tipoUsuarios FOREIGN KEY (idTipoUsuario) REFERENCES tipoUsuarios (idTipoUsuario) ON DELETE CASCADE ON UPDATE CASCADE;
@@ -98,9 +114,14 @@ ALTER TABLE subcategorias ADD CONSTRAINT fk_subcategoriasEst FOREIGN KEY (idEsta
 /* union de compras usuario*/
 ALTER TABLE comprasUsuarios ADD CONSTRAINT fk_comprasUsuario FOREIGN KEY (idLibro) REFERENCES libros (idLibro) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE comprasUsuarios ADD CONSTRAINT fk_usuario FOREIGN KEY (idUsuario) REFERENCES usuarios (idUsuario) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE comprasUsuarios ADD CONSTRAINT fk_pagos FOREIGN KEY (idPagos) REFERENCES formaPago (idPagos) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /* union de libros */
 
 ALTER TABLE libros ADD CONSTRAINT fk_categorias FOREIGN KEY (idCategoria) REFERENCES categorias (idCategorias) ON DELETE CASCADE ON UPDATE CASCADE;
 ALTER TABLE libros ADD CONSTRAINT fk_subcategorias FOREIGN KEY (idSubcategoria) REFERENCES subcategorias (idsubCategorias) ON DELETE CASCADE ON UPDATE CASCADE;
+
+
+
+
 
