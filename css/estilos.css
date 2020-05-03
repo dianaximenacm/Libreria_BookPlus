@@ -1,0 +1,666 @@
+/* estilos del body del documento*/
+body{
+	width: 1600px;
+	height: 1200px;
+	margin: auto;
+
+}
+/* contenedor de todos los nav*/
+#contNav{
+	background-color: #008698;
+	width: 100%;
+	height: 13%;
+	float: left;
+}
+/* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/;
+#priNav{
+	background-color: #009DAC;
+	width: 100%;
+	height: 20%;
+	float: left;
+}
+
+ul{
+	width: 90%;
+	height: 80%;
+	margin-top: 0.1%;
+	margin-left: 10%;
+	text-decoration: none;
+	float: left;
+}
+
+li{
+	display: inline-block;
+	margin-top: 0.3%;
+	margin-right: 1%;
+	padding: 0 0 1px;
+	font-family: Roboto, sans-serif;
+	font-size: 80%;
+	color: white;
+	float: left;
+}
+
+#priLi{
+	margin-left: 50%;
+	float: left;
+}
+/* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
+#segNav{
+	background-color: #009DAC;
+	width: 100%;
+	height: 50%;
+	position: sticky;
+	top: 0;	
+	float: left;
+}
+
+#logo{
+	background-color: #009DAC;
+	width: 15%;
+	height: 100%;
+	margin-left: 10%;
+	float: left;
+}
+/* palabra Livaria Cultura*/
+#logoLetra{
+	width: 100%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 10%;
+	font-family: sans-serif;
+	font-size: xx-large;
+	color: #FAFAF6;
+}
+/* buscador de la paguina web*/
+#buscador{
+	background-color: white;
+	width: 32%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 1%;
+	float: left;
+}
+/*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
+#todoSite{
+	background-color:transparent;
+	width: 20%;
+	height: 100%;
+	font-family: nunito;
+	font-size: 75%;
+	color: #06A2AF;
+	border: none;
+	float: left;
+}
+/* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
+#inputBuscar{
+	width: 67%;
+	height: 82%;
+	margin-top: 0.4%;
+	margin-left: 2%;
+	border: none;
+	float: left;
+}
+/* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
+#botonLupa{
+	background-color: transparent;
+    width: 10%;
+    height: 100%;
+    border: none;
+    float: left;
+}
+/* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
+#usuario{
+	background-color: transparent;
+	width: 10%;
+	height: 60%;
+	margin-top: 0.9%;
+	margin-left: 2%;
+	float: left;
+}
+/* Son las letras que dicen Ola, bem vindo(a)*/
+#letraOla {
+	width: 65%;
+	height: 40%;
+	margin-top: 5%;
+	font-family: Roboto;
+	font-size: 90%;
+	color: #FFFFFF;
+	float: right;
+}
+/* es el hipervinculo que abre la ventana de registrarse o ingresar"*/
+#letraEntre {
+	width: 65%;
+	height: 40%;
+	margin-top: -16%;
+	font-family: Roboto;
+	font-size: 80%;
+	color: #FFFFFF;
+	float: right;
+}
+/* es el espacio se que le dio al carro de ventas de la paguina*/
+#pedidos{
+   background-color: transparent; 
+   width: 5%;
+   height: 80%;
+   margin-top: 0.5%;
+   margin-left: 2%;
+   float: left;
+}
+/* tercer contenedor del nav*/
+#terNav{
+	background-color: #FAFAF6;
+	width: 100%;
+	height: 30%;
+	float: left;
+}
+/* clase que se para caracterizar los opciones de esta zona del nav*/ 
+.iconosNav{
+	background-color: #FAFAF6;
+	width: 15%;
+	height: 100%;
+	margin-right: 0.5%;
+	float: left;
+}
+/* primera opcion de las listas del nav, compre por categorias*/ 
+#compreCat{
+	margin-left: 12%;
+	float: left;
+}
+/* caracteristica de la lista compre por categorias*/
+#compreCat li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	text-align: center;
+	color: #009ADC;
+}
+/* este da las caracteristicas a la tabla que aparece al escojer la opcion compre por categorias*/
+#subCompras{
+	background-color: #FAFAF6;
+	width: 16%;
+    height: 65%;
+    margin-top: 1.9%;
+    margin-left: 13%;
+    display: none;
+    position: fixed;
+}
+/* Da las caracteristicas a todas las subopciones que aparecen al seleccionar una opcion del nav3*/
+.subiconosNav{
+	width: 100%;
+	height: 6.5%;
+	margin-top: 1.8%;
+	margin-left: 5%;
+	font-family: sans-serif;
+	font-size: x-large;
+	color: #44525D;
+	float: left;
+}
+/* da el efecto del color #009ADC que aparece cuando el mouse esta encima de una subopcion*/
+#subCompras :hover{
+	width: 95%;
+	margin-left: 5%;
+	background-color: rgba(0,157,172,0.4);
+	transition: background-color 1s;
+}
+
+#ExploreCul li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: red;
+}
+
+#subExplorecul{
+	background-color: #FAFAF6;
+	width: 16%;
+	height: 30%;
+	margin-top: 1.9%;
+	margin-left: 30%;
+	display: none;
+	position: fixed;
+}
+#subExplorecul li:hover{
+	width: 95%;
+	height : 12%;
+	background-color: rgba(0,157,172,0.4);
+	transition: background-color 1s;
+}
+#subExplorecul li{
+	margin-top: 11%;
+	margin-left: -24%;
+}
+/* este estilo es de cultura indica lista nav3*/
+#culturaLis li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+/* este estilo es de central de ofertas nav3*/
+#centralOfer li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+/* este estilo es para eventos nav3*/
+#eventos li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+
+/* contenedor de publicidade*/
+
+#contPublici{
+	background-color: #009ADC;
+	width: 100%;
+	height: 40%;
+	float: left;
+}  
+/* Primer contenedor de la publicidad*/
+#publicidadePri{
+	background-color: #181717;
+	width: 100%;
+	height: 18%;
+	float: left;
+}
+/* primer lado del primer container de publicidad*/
+#izqPubliuno{
+	background-color: #181717;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+#subizqPubliuno{
+	background-color: #009DAC;
+	width: 100%;
+	height: 50%;
+	margin-top: 3%;
+}
+
+#derPublipri{
+	background-image: url("../img/compre_receba.png");
+	background-repeat: none;
+	background-position: fixed;
+	background-size: 100% 100%;
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+#subderPubliuno{
+	background-color: rgba(0,154,220,.4);
+	width: 55.5%;
+	height: 30%;
+	margin-top: 3%;
+	float: right;
+}
+
+/* Segundo contenedor de la publicidad*/
+#carrusel{
+	background-image: url("../img/carrusel_5.png");
+	background-repeat: none;
+	background-attachment: scroll;
+	background-size: 100%;
+	width: 100%;
+	height: 64%;
+	float: left;
+}
+/* Tercer contenedor de la publicidad*/
+#publicidadeCont{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 20%;
+	float: left;
+}
+#ayudas{
+	background-color : #171818;
+	width: 30%;
+	height: 100%;
+	float : left;
+}
+
+#entregas{
+	background-image: url(../img/foguete.png);
+	width: 15%;
+	height: 100%;
+	float : left;
+}
+
+#frete{
+   background-image: url(../img/frete.png);
+   width: 15%;
+   height: 100%;
+   float : left;
+}
+
+#formaPago{
+   background-image: url(../img/medPago.png);
+   width: 15%;
+   height: 100%;
+   float : left;
+}
+
+#vales{
+   background-image: url(../img/vale.png);
+   background-repeat: no-repeat;
+   width: 15%;
+   height: 100%;
+   float : left;
+}
+.linea{
+	background-color: rgba(17,18,18,0.1);
+	width : 0.1%;
+	height: 40%;
+	margin-top : 2%;
+	float: left;
+}
+
+.linkVentas{
+	width: 100%;
+	height: 30%;
+	margin-top: 25%;
+	margin-left: 20%;
+	text-decoration: none;
+	color: #FE416D;
+	float: left;
+}
+/* parte central de mi paguina*/
+main{
+	background-color: white;
+	width : 100%;
+	height: 500%;
+	float: left;
+}
+/* se usa para el texto que se escribe en la mitad de cada parte de main*/
+h1{
+	margin-top: 1.5%;
+	color : #171818;
+	font-family: roboto;
+	text-align : center;
+}
+/* sorpresas y livros que la libreria recomienda para sus usuarios*/
+#queTem{
+	width : 75%;
+	height : 10%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-bottom: 1%;
+	float : left;
+}
+.artVarios{
+	background-color: #FFFFFF;
+	width : 18%;
+	height : 100%;
+	margin-left: 2%;
+	float: left;
+}
+/* estilos del contenedor de los botones livros, Ebooks,Filmes,Música*/
+.botopciones{
+	/*background-color: rgba(18,17,17,0.1);*/
+	width : 15%;
+	height : 3%;
+	margin-left: 42.5%;
+	margin-right: 42.5%;
+	margin-bottom: 1.5%;
+	float : left;
+}
+
+.botNov{
+	background: padding-box;
+	width: 25%;
+	height: 100%;
+	font-family: tahora;
+	margin-left : -2%;
+}
+/* este es el container de los livros, Ebooks,Filmes,Música*/
+#novedades{
+	background-color: white;
+	width : 75%;
+	height : 16%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-bottom: 1%;
+	float : left;
+}
+/* este es el estilos del dom que cambia livros,Ebooks,Filmes,Música*/
+.estilos{
+	background-color: white;
+	width: 19%;
+	height : 100%;
+	color: black;
+	border: 2px solid rgba(17,18,18,0.3);
+	border-radius: 10px;
+	float : left;
+}
+.cardImg{
+	background-color: rgba(34,126,245,0.6);
+	width: 80%;
+	height : 35%;
+	margin-top : 5%;
+	margin-left: 10%;
+	margin-bottom: 3%;
+	border: 2px solid #171818;
+	float: left;
+}
+.cardTexto{
+	width: 90%;
+	height : 5%;
+	margin-top : 1.5%;
+	margin-left: 5%;
+	background-color : #FFFFFF;
+	color : #000000;
+	font-family: sans-serif;
+	font-size : 120%;
+	text-align : center;
+	float : left;
+}
+
+#botCompra{
+	background-color : transparent;
+	width : 90%;
+	height : 12%;
+	margin-left : 5%;
+	border: 2px solid #FF9C00;
+	color : black;
+	font-family : sans-serif;
+	font-size : 100%;
+	border-radius : 10px;
+	float : left;
+}
+
+/*----------------------- aca termina los estilos de las card que son del dom de livros,Ebooks,Filmes, Música----*/
+
+#expeDecultura{
+	width : 70%;
+	height : 10%;
+	margin-top: 1%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 1%;
+	float : left;
+}
+
+.estilosExp{
+	background-color: white;
+	width: 18%;
+	height : 100%;
+	margin-left: 2%;
+	float : left;
+}
+
+/*------------------------------------------------seccion de mais vendidos-----------------------------------------*/
+
+#masVendidos{
+	background-color: white;
+	width : 75%;
+	height : 17%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-bottom: 1%;
+	float : left;
+}
+
+/*-----------------------------------------------seccion de mais visitados-------------------------------------------*/
+
+#masVisitados{
+	background-color: transparent;
+	width : 75%;
+	height : 16%;
+	margin-top: 2%;
+	margin-left:12.5%;
+	margin-right: 12.5%;
+	float: left;
+}
+
+/* footer de mi paguina */
+footer{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+#redSocial{
+	background-color: #009DAC;
+	width: 100%;
+	height: 15%;
+	float:  left;
+}
+
+#letrasRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 12%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+#emailRed{
+	background-color: #009DAC;
+	width: 25%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 120%;
+	float: left;
+}
+
+#digEmail{
+	width: 80%;
+	height: 40%;
+	margin-top: 4%;
+	font-family: Roboto;
+	font-size: 100%;
+	border-radius: 2px;
+	float: left;
+}
+#botCorreo{
+	background-color: transparent;
+    width: 15%;
+	height: 60%;
+	margin-top: 3%;
+	margin-left: 0.5%;
+	font-family: Roboto;
+	font-size: 100%;
+	color: white;
+	border-radius: 2px;
+	float: left;
+}
+
+#letraRed{
+	background-color: #009DAC;
+	width: 10%;
+	height: 60%;
+	margin-top: 1.2%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size :100%;
+	float: left;
+}
+#iconosRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+.icono{
+	background-color: transparent;
+	width: 10%;
+	height: 15%;
+	margin-top: 6%;
+	margin-left: 10%;
+	float: left;
+}
+#pagamenServicio{
+   background-color: rgba(255,255,245,0.8);
+   width: 100%;
+   height: 60%;
+   float:  left;
+
+}
+
+.cuadrosPagamento{
+	width: 16%;
+	height: 100%;
+	float: left;
+}
+
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: black;
+}
+
+.estiloA{
+	width: 100%;
+	height: 2%;
+	margin-top: 2%;
+}
+
+h4{
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-family: sans-serif;
+	color: #009DAC;
+}
+#pagos{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#pagoTargeta{
+	background-color: transparent;
+	width: 95%;
+	height : 4%;
+	margin-top: 5%;
+	margin-left: 2.5%;
+	float: left;
+}
+
+#bancosAcei{
+	background-color: transparent;
+	width: 100%;
+	height : 25%;
+	margin-top: 10%;
+	float: left;
+}
+
+h5{
+	margin-top: 24%;
+	margin-left: 15%;
+	color: #664664AF;
+}
