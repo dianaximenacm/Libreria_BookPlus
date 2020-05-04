@@ -5,7 +5,7 @@
 }
 
 body {
-	background-image: url('../file/libro.webp');
+	background-image: url('../files/fondo.webp');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -80,11 +80,11 @@ label{
 }
 
 #portada {
-	background-image: url(../file/bookPortada.jpg);
+	background-image: url(../files/bookPortada.jpg);
 }
 
 #portadaAtras {
-	background-image: url(../file/portadaBack.jpg);
+	background-image: url(../files/portadaBack.jpg);
 }
 
 #portada, #portadaAtras {
