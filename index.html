@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> livraria cultura </title>
+        <title> Book Plus </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
@@ -12,68 +12,58 @@
             <!-- primer nav de mi paguina-->
         	<div id="priNav">
         		<ul>
-        			<a href=""><li id="priLi">Lojas</li></a>
+        			<a href=""><li id="priLi">Tienda</li></a>
         			<a href=""><li> | </li></a>
-        			<a href=""><li> Atendimento e Televendas </li></a>
+        			<a href=""><li> Entrega a domcicilio</li></a>
         			<a href=""><li> | </li></a>
-        			<a href=""><li> Vendas corporativas </li></a>
+        			<a href=""><li> Ventas corporativas </li></a>
         		</ul>
         	</div>
             <!-- Segundo nav de mi paguina-->
         	<div id="segNav">
         		<div id="logo">
-        			<p id="logoLetra"> livraria cultura </p>
+        			<p id="logoLetra"> Book Plus</p>
         		</div>	
         		<div id="buscador">
                 <form method="POST" action="busqueda.php">
-        			<button id="todoSite">TODO O SITE</button>
+        			<button id="todoSite">BUSQUEDA</button>
         			<input id="inputBuscar" type="" name="buscador">
-        			<button id="botonLupa"><img src="img/lupa.png" width="100%" alt="lupa"></button>
+        			<button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="100%" alt="lupa"></button>
                 </form>
         		</div>	
         		<div id="usuario">
-        			<img src="img/usuario.png" width="30%" alt="usuario">
-        			<span id="letraOla">Ola,bem vindo(a)</span>
-        			<a href="registro.php" id="letraEntre">Entre ou cadastre-se</a>
+        			<img src="../Libreria/files/Icons/Icono_Usuario.png" width="30%" alt="usuario">
+        			<span id="letraOla">Bienvenidos</span>
+        			<a href="registro.php" id="letraEntre">Ingresa o Registrate</a>
         		</div>	
         		<div id="pedidos">
-        			<img src="img/carrito_mercado.png" width="70%" alt="carrito_compras">
+        			<img src="../Libreria/files/Icons/compras.png" width="70%" alt="carrito_compras">
         		</div>	
         	</div>
             <!-- tercer nav de mi paguina-->
         	<div id="terNav">
         		<div id="compreCat" class="iconosNav" onmouseover="mostrar('subCompras');" onmouseout="esconder('subCompras')">
                     <ul>
-                    	<li>Compre por Categoria</li>
+                    	<li>Descubre nuestros libros </li>
         		</div>
                 <!-- esta son los subOpciones de compre por categoria que se encuentra en ele tercer nav-->
         		<div id="subCompras" onmouseover="mostrar('subCompras');" onmouseout="esconder('subCompras')" >
-        			<li class="subiconosNav">Livros</li><br>
-        			<li class="subiconosNav">Livros Usados</li><br>
-        			<li class="subiconosNav">Livros Importados</li><br>
-        			<li class="subiconosNav">eBook</li><br>
-        			<li class="subiconosNav">Filmes e sèries</li><br>
-        			<li class="subiconosNav">Mùsica</li><br>
-        			<li class="subiconosNav">Geek</li><br>
-        			<li class="subiconosNav">Jogos e Brinquedos</li><br>
-        			<li class="subiconosNav">Papeleria</li><br>
-        			<li class="subiconosNav">Revistas</li><br>
-        			<li class="subiconosNav">Gifts</li><br>
-        			<li class="subiconosNav">Vale-presente</li><br>
-        			<li class="subiconosNav">Central de ofertas</li><br>
+        			<li class="subiconosNav">Libros Nuevos</li><br>
+        			<li class="subiconosNav">Libros Usados</li><br>
+        			<li class="subiconosNav">Literatura</li><br>
         		</div>	
                 <!-- Explore Cultura-->
         		<div id="ExploreCul" class="iconosNav" onmouseover="mostrar('subExplorecul');" onmouseout="esconder('subExplorecul')" >
         			<ul>
-        				<li>Explore Cultura</li>
+        				<li>Eventos Cuturales</li>
         			</ul>
         		</div>
                 <!-- Estos son las sunOpciones de Explore Cultura-->
         		<div id="subExplorecul" onmouseover="mostrar('subExplorecul');" onmouseout="esconder('subExplorecul')">
         			<ul>
         				<li class="subiconosNav">Eventos</li>
-        				<li class="subiconosNav">Cultura em Curso</li>
-        				<li class="subiconosNav">Teatro Eva Herz</li>
+        				<li class="subiconosNav">Lecturas</li>
+        				<li class="subiconosNav">Teatro</li>
         				<li class="subiconosNav">Canal da Cultura</li>
         				<li class="subiconosNav">Sala de visitas</li>
         			</ul>
@@ -112,7 +102,6 @@
         	</div>
             <!-- Carrusel de la paguina-->
         	<div id="carrusel">
-
         	</div>
         	<div id="publicidadeCont">
                 <div id="ayudas">
@@ -164,7 +153,6 @@
                 </div>  
                 <h1> Experencias de Cultura </h1>
                 <div id="expeDecultura">
-
                 </div>    
                 <h1>Mais vendidos </h1>
                 <div class="botopciones">
@@ -185,7 +173,6 @@
                 <div id="masVisitados">
                 
                 </div>  
-
             </main>   
             <footer>
                 <div id="redSocial">
@@ -269,7 +256,6 @@
                     Livraria Cultura, todos os direitos reservados. Copyrights 2020 <br>
                     <br>Livraria Cultura S/A | Av. Paulista, 2300, 10° andar, São Paulo - SP - Brasil CEP 013110-300 | CNPJ 62.410.352/0001-72 | IE 111.133.781.116 | PABX 11 3056-4300<br>
                     <br>Os preços, condições de pagamento e valores de frete são válidos exclusivamente para as compras efetuadas em nosso site, não valendo, necessariamente, para as nossas lojas físicas.
-
                 </h5> 
             </footer>      	
         	

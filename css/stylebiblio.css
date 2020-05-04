@@ -10,7 +10,14 @@ background-image: linear-gradient( 135deg, #05b7c7 10%, #009dac 100%);
 background-attachment: fixed;	
 background-size: cover;
 }
-/* Header */
+
+/* Header index */
+
+
+
+
+
+/* Header biblio */
 .biblio-start{
     margin:auto;
     text-align: center;
@@ -28,7 +35,7 @@ background-size: cover;
     width: 100%;
     height: 110px;
     font-size: 23px;
-    font-family: 'Old Standard TT', serif;;
+    font-family: 'Old Standard TT', serif;
     text-align: center;
     margin-top: -8px;
 }
