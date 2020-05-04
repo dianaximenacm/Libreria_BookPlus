@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Old StandardTT' serif;
+}
+
+body {
+	background-image: url('../file/libro.webp');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.fondo {
+	opacity: 0.6;
+}
+
+.form {
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+label{
+	font-size: 16px;
+}
+
+.container, .contenidoLibro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.contenidoLibro {
+	width: 80%;
+	min-width: 400px;
+	max-width: 550px;
+	height: 450px;
+	position: relative;
+	perspective: 1500px;
+	transition: 1s;
+}
+
+.libro {
+	position: absolute;
+	width: 65%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left;
+}
+
+.paginaFrente, .paginaAtras {
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.paginaFrente {
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.paginaAtras {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset 3px 0px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+#portada {
+	background-image: url(../file/bookPortada.jpg);
+}
+
+#portadaAtras {
+	background-image: url(../file/portadaBack.jpg);
+}
+
+#portada, #portadaAtras {
+	background-size: 100% 100%;
+}
+
+/* clases que se agregan con JS */
+
+.trnsf {
+	transform: translateX(180px);
+}
+
+.trnsf-reset {
+	transform: translateX(0px);
+}
+
+/* @media para hacer el texto responsive  */
+
+@media screen and (max-width: 800px) {
+	p {
+		font-size: 12px;
+	}
+}
+
+/* Decoración registro */
+
+.form {
+	padding: 16px;
+}
+
+
+input[type=text], input[type=password] {
+	width: 90%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Overwrite default styles of hr */
+
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+	background-color: #009DAC;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.registerbtn:hover {
+	opacity: 1;
+}
+
+/* Add a blue text color to links */
+
+a {
+	color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+}
