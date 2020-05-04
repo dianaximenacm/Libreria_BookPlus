@@ -1,0 +1,242 @@
+
+/* Slider  */
+
+.sliderdivitext{
+	display: inline-flex;
+	background-color: #DDE8F0;
+	box-sizing: content-box;
+	width: 50%;
+	margin-top: 50px;
+
+}
+
+.textoslider{
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #004581;
+	width: 50%;
+	height: 600px;
+	padding: 2px;
+	margin-left: 5px;
+	float: right;
+ }
+
+.tituloslider{
+	color: #004581 ;
+	text-align: left;
+	font-size: 15px;
+	padding: 35px 0 15px 0;
+	font-family: open sans;
+	letter-spacing: 3px;
+}
+
+.tituloslider2{
+	color: #DDE8F0;
+	text-align: left;
+	font-size: 35px;
+	padding: 35px 0 15px 0;
+	text-shadow: -3px -3px 5px  #008698;
+	font-family:'Bowlby One SC', cursive; 
+	letter-spacing: 4px;
+}
+
+p {
+	font-family: open sans;
+	font-size: 22px;
+	color: #008698;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.slider {
+	width: 25%;
+	margin: auto;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+ 
+}
+
+.slider img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media (max-width:600px){
+	.sliderdivitext{
+		width: 100%;
+		height: 400px;
+	}
+}
+@media (min-width:600px){
+	.sliderdivitext{
+	 width: 100%;
+	 height: 400px;
+ }   
+}
+/* Para dispositivos medianos */
+@media(min-width:768px){
+	.sliderdivitext {
+width: 100%;
+height: 420px;
+	}
+}
+
+@media (min-width:992px){
+	.sliderdivitext{
+		width: 100%;
+		height: 400px;
+	}
+}
+/* Dispositivos muy grandes */
+@media (min-width:1200px){
+	.sliderdivitext{
+		width: 100%;
+		height: 600px;
+	}
+}
+
+/* content cards  */
+
+.titulo-Bienvenida{
+    font-size: 20px;
+    color: cornflowerblue;
+	text-shadow: black;
+	text-align: center;
+
+}
+
+
+.titulocard1{
+    color: #DDE8F0;
+    text-align: center;
+    font-size: 30px;
+    padding: 35px 0 15px 0;
+    text-shadow: -3px -3px 5px #008698;
+    font-family:'Bowlby One SC', cursive; 
+    letter-spacing: 4px;
+    margin-top: 200px;
+}
+
+.contentienda{
+    width:100;
+    font-family: open sans;
+    font-size: 20px;
+    letter-spacing:0.03em;
+    margin-bottom:-132px;
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+.container .card{
+    width: 250px;
+    height: 600px;
+    overflow: auto;
+    text-align: center;
+    transition: all 0.25s;
+    border-radius: 10px;
+    margin: 0.5px;
+    padding: 1px;
+}
+
+.container .card p,
+h4 {
+    width: 80%;
+    margin: 20px;
+}
+.container .card:hover{
+    transform: rotateY(10deg); 
+    transition: 3s;
+}
+#cardtwo:hover{
+    transform: rotateY(20deg); 
+    transition: 3s;
+}
+
+.container .card img{
+    width: 246px;
+    height: 350px;
+}
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+
+    @media (max-width:600px){
+        .container{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    @media (min-width:600px){
+     .container{
+         width: 100%;
+         height: 400px;
+     }   
+    }
+    /* Para dispositivos medianos */
+    @media(min-width:768px){
+    .container {
+    width: 100%;
+    height: 420px;
+        }
+    }
+    
+    @media (min-width:992px){
+        .container{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    /* Dispositivos muy grandes */
+    @media (min-width:1200px){
+        .container{
+            width: 100%;
+            height: 600px;
+        }
+	}
+	
+
+	
