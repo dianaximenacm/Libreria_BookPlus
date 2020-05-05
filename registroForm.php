@@ -14,7 +14,7 @@
 					<div class="paginaFrente" id="portada"></div>
 					<div class="paginaAtras" id="trsf">
 						<h1>Registrate</h1>
-						<form action="control/usuarioControl.php" method="POST">
+						<form action="control/usuarioControl.php?accion=registrar" method="POST">
   							<div class="form">
     							<label type="email"><b>Email</b></label><br>
     							<input type="text" placeholder="Email" name="email">
@@ -34,7 +34,7 @@
 				<div class="libro">
 					<div class="paginaFrente">
 						<h1>Inicia Sesión</h1>
-						<form action="control/usuarioControl.php" method="POST">
+						<form action="control/usuarioControl.php?accion=ingresar" method="POST">
       						<div class="form">
 								<label type="email"><b>Email</b></label><br>
         						<input type="text" name="email" placeholder="Email"><br>

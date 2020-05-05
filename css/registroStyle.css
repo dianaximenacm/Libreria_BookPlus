@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Old StandardTT' serif;
+	font-family: sans-serif;
 }
 
 body {
@@ -140,7 +140,7 @@ hr {
 /* Set a style for the submit/register button */
 
 .registerbtn {
-	background-color: #009DAC;
+	background-color: #009ADC;
 	color: white;
 	padding: 16px 20px;
 	margin: 8px 0;

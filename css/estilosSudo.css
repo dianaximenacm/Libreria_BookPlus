@@ -1,0 +1,490 @@
+/* estilos del body del documento*/
+
+body {
+    width: 1500px;
+    height: 1200px;
+}
+
+
+/* contenedor de todos los nav*/
+
+#contNav {
+    background-color: #008698;
+    width: 100%;
+    height: 13%;
+    float: left;
+}
+
+
+/* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/
+
+;
+#priNav {
+    background-color: #009DAC;
+    width: 100%;
+    height: 20%;
+    float: left;
+}
+
+ul {
+    width: 90%;
+    height: 80%;
+    margin-top: 0.1%;
+    margin-left: 10%;
+    text-decoration: none;
+    float: left;
+}
+
+li {
+    display: inline-block;
+    margin-top: 0.3%;
+    margin-right: 1%;
+    padding: 0 0 1px;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    color: white;
+    float: left;
+}
+
+#priLi {
+    margin-left: 50%;
+    float: left;
+}
+
+
+/* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
+
+#segNav {
+    background-color: #009DAC;
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+#logo {
+    width: 15%;
+    height: 100%;
+    margin-left: 10%;
+    float: left;
+    margin-top: -0.7%;
+    border: none;
+    outline: none;
+}
+
+#btnLog {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: -170%;
+}
+
+#logoId {
+    width: 15%;
+    height: 18%;
+}
+
+
+/* palabra Livaria Cultura*/
+
+#logoLetra {
+    width: 500% !important;
+    height: 350% !important;
+    margin-top: -28%;
+    margin-left: -15%;
+    font-family: sans-serif;
+    font-size: xx-large;
+    color: #FAFAF6;
+}
+
+
+/* buscador de la paguina web*/
+
+#buscador {
+    background-color: white;
+    width: 32%;
+    height: 60%;
+    margin-top: 0.8%;
+    margin-left: 1%;
+    float: left;
+}
+
+
+/*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
+
+#todoSite {
+    background-color: transparent;
+    width: 20%;
+    height: 100%;
+    font-family: nunito;
+    font-size: 75%;
+    color: #06A2AF;
+    border: none;
+    float: left;
+}
+
+
+/* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
+
+#inputBuscar {
+    width: 67%;
+    height: 82%;
+    margin-top: 0.4%;
+    margin-left: 2%;
+    border: none;
+    float: left;
+}
+
+
+/* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
+
+#botonLupa {
+    background-color: transparent;
+    width: 10%;
+    height: 100%;
+    border: none;
+    float: left;
+}
+
+
+/* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
+
+#usuario {
+    background-color: transparent;
+    width: 10%;
+    height: 60%;
+    margin-top: 0.9%;
+    margin-left: 2%;
+    float: right;
+}
+
+
+/* Son las letras que dicen Ola, bem vindo(a)*/
+
+#letraOla {
+    width: 65%;
+    height: 40%;
+    margin-top: 5%;
+    font-family: Roboto;
+    font-size: 90%;
+    color: #FFFFFF;
+    float: right;
+}
+
+
+/* tercer contenedor del nav*/
+
+#terNav {
+    background-color: #FAFAF6;
+    width: 100%;
+    float: left;
+}
+
+#principal {
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201__340.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: inherit;
+    width: 100%;
+    height: 80%;
+    margin-top: 8%;
+    float: left;
+}
+
+
+/* clase que se para caracterizar los opciones de esta zona del nav*/
+
+.iconosNav {
+    background-color: #FAFAF6;
+    width: 15%;
+    height: 100%;
+    margin-right: 0.5%;
+    float: left;
+}
+
+.photo {
+    background: red;
+    width: 100%;
+    height: 12%;
+}
+
+
+/* caracteristica de la lista accioes del super administrador*/
+
+.menu {
+    width: 100%;
+    margin: 0% auto 0% auto;
+    background-color: lightgrey;
+    opacity: 1;
+    color: black;
+    box-shadow: black 100px solid;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li>a {
+    display: inline-block;
+    padding: 2% 10%;
+    color: rgb(0, 175, 250) !important;
+    font-family: 'Open sans';
+    text-decoration: none;
+    font-size: 200%;
+}
+
+.menu li a:hover {
+    color: black !important;
+    transition: all .1s;
+}
+
+.subMenu {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.subMenu li a {
+    display: block;
+    font-family: 'Open sans';
+    padding: 12% 0% 12% 0%;
+    text-decoration: none;
+    text-align: center;
+    background: #FAFAF6;
+    box-shadow: black 2px solid;
+}
+
+.menu li:hover .subMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Perfil */
+
+.perfil {
+    text-align: center;
+}
+
+.perfil img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+
+/*Consulta de producto*/
+
+.consultarProd {
+    text-align: center !important;
+}
+
+.btnForm {
+    background: rgb(6, 241, 163);
+    border: none;
+    outline: none;
+    width: 15%;
+    color: rgb(16, 14, 165);
+    font-size: 160%;
+    border-radius: 80%;
+    margin-top: 2%;
+}
+
+
+/*Agregar Prod*/
+
+.datos {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 120%;
+    color: black;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 2%;
+    text-align: center;
+}
+
+.campos {
+    text-align: center;
+    display: none;
+}
+
+.campos:target {
+    display: block;
+    transition: opacity 1.5s;
+    border: 2px solid black;
+    border-radius: 30%;
+    margin: 0 16% 0 16%;
+    padding: 4% 10%;
+    background: lightgray;
+}
+
+
+/*------------------------------------------------ codigo a cambiar--------------*/
+
+
+/*    animacion     */
+
+
+/*--------------------------------------------------------------------------------*/
+
+
+/* footer de mi paguina */
+
+footer {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 40%;
+    margin-top: 1%;
+    float: left;
+}
+
+#redSocial {
+    background-color: #009DAC;
+    width: 100%;
+    height: 15%;
+    float: left;
+}
+
+#letrasRed {
+    background-color: #009DAC;
+    width: 20%;
+    height: 60%;
+    margin-top: 0.8%;
+    margin-left: 12%;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 100%;
+    float: left;
+}
+
+#emailRed {
+    background-color: #009DAC;
+    width: 25%;
+    height: 100%;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 120%;
+    float: left;
+}
+
+#digEmail {
+    width: 80%;
+    height: 40%;
+    margin-top: 4%;
+    font-family: Roboto;
+    font-size: 100%;
+    border-radius: 2px;
+    float: left;
+}
+
+#botCorreo {
+    background-color: transparent;
+    width: 15%;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: 0.5%;
+    font-family: Roboto;
+    font-size: 100%;
+    color: white;
+    border-radius: 2px;
+    float: left;
+}
+
+#letraRed {
+    background-color: #009DAC;
+    width: 10%;
+    height: 60%;
+    margin-top: 1.2%;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 100%;
+    float: left;
+}
+
+#iconosRed {
+    background-color: #009DAC;
+    width: 20%;
+    height: 100%;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 100%;
+    float: left;
+}
+
+.icono {
+    background-color: transparent;
+    width: 10%;
+    height: 15%;
+    margin-top: 6%;
+    margin-left: 10%;
+    float: left;
+}
+
+#pagamenServicio {
+    background-color: rgba(255, 255, 245, 0.8);
+    width: 100%;
+    height: 60%;
+    float: left;
+}
+
+.cuadrosPagamento {
+    width: 16%;
+    height: 100%;
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 100%;
+    color: black;
+}
+
+.estiloA {
+    width: 100%;
+    height: 2%;
+    margin-top: 2%;
+}
+
+h4 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: sans-serif;
+    color: #009DAC;
+}
+
+#pagos {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+#pagoTargeta {
+    background-color: transparent;
+    width: 95%;
+    height: 4%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    float: left;
+}
+
+#bancosAcei {
+    background-color: transparent;
+    width: 100%;
+    height: 25%;
+    margin-top: 10%;
+    float: left;
+}
+
+h5 {
+    margin-top: 24%;
+    margin-left: 15%;
+    color: #664664AF;
+}

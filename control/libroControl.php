@@ -12,7 +12,7 @@ switch($accion){
     case 'categoria':
                  categoria();
     break;
-    case: 'subCategoria':
+    case 'subCategoria':
                  subCategoria();
     break;        
     
@@ -28,7 +28,7 @@ function nuevoProducto(){
     $cate = $_POST[''];
     $subCate = $_POST[''];
     $estado = $_POST[''];
-    $result = $producto->nuevoProducto($nombre,$autor,$editorial,$existencias,$precio,$Cate,$subCate,$estado);
+    $result = $producto->nuevoProducto($nombre,$autor,$editorial,$existencias,$precio,$cate,$subCate,$estado);
     header('location: ../sudo.php?value=ProductoNuevo');
 }
 
@@ -56,4 +56,4 @@ function subCategoria(){
     $producto->agregarsubCategoria($nueCategoria,$estado);
 }
 
->?
+?>
