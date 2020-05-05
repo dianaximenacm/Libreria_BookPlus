@@ -28,11 +28,11 @@ switch($accion){
 		$contrasena = md5($_POST['contrasena']);
 		$respuesta = $usuario->nuevoUsuario($correo,$contrasena);
 		if($respuesta != 'error'){
-			header('location:../registroForm.php?valor=registrado');
+			header('location:../registro.php?valor=registrado');
 		}else {
-			header('location:../registroForm.php?valor=no-registrado');
-		}
-	}
+			header('location:../registro.php?valor=noregistrado');
+	    }
+	}    
 
 	function ingDatos(){
 		$usuario = new Usuario();
@@ -59,10 +59,9 @@ switch($accion){
 				sessionStorage.setItem('usuario','$correo');
 				window.location='../perfil.php';
 				</script>";
-				//header('location:../perfil.php');
 			}
 		} else {
-			header('location:../registroForm.php?datos-invalidos');
+			header('location:../registro.php?datosinvalidos');
 		}
 	}
 
