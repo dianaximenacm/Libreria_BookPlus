@@ -28,9 +28,9 @@ switch($accion){
 		$contrasena = md5($_POST['contrasena']);
 		$respuesta = $usuario->nuevoUsuario($correo,$contrasena);
 		if($respuesta != 'error'){
-			header('location:../registro.php?valor=registrado');
+			header('location:../registroForm.php?valor=registrado');
 		}else {
-			header('location:../registro.php?valor=noregistrado');
+			header('location:../registroForm.php?valor=noregistrado');
 	    }
 	}    
 

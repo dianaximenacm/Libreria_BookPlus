@@ -4,7 +4,7 @@ class Conexion extends mysqli{
 	private $DB_HOST ='localhost'; // nombre del host
 	private $DB_USER = 'root';     // nombre del usuario por defecto root
 	private $DB_PASS = '';    // password del usuario por defecto mysql
-	private $DB_NAME = 'libreria'; // nombre de la base de datos
+	private $DB_NAME = 'libreriabictia'; // nombre de la base de datos
     // Declaramos el contructor
 
     public function __construct(){

@@ -58,12 +58,12 @@
             <!-- Segundo nav de mi paguina-->
         	<div id="segNav">
         		<div id="logo">
-                    <img src="files/logo.png" id="logoIma" alt="logo" >
+                    <img src="../Libreria/files/Icons/logo.png"id="logoIma" alt="logo" >
         			<p id="logoLetra"> Book Plus </p>
         		</div>	
         		<div id="buscador">
                     <form method="post" id="formBuscador" action="control/usuarioControl.php?accion=buscar">
-        			<button id="todoSite">TODO O SITE</button>
+        			<button id="todoSite">Busqueda</button>
         			<input id="inputBuscar" type="text" name="buscador" placeholder="libro a buscar">
         			<button id="botonLupa"><img src="files/Icons/lupa.png" width="100%" alt="lupa"></button>
                 </form>

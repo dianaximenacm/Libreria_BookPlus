@@ -35,29 +35,6 @@
 </head>
 
 <body>
-    <!-- Contenedor todos los navs-->
-    <div id="contNav">
-        <!-- Primer nav pagina-->
-        <div id="priNav">
-            <ul>
-                <a href="">
-                    <li id="priLi">Lojas</li>
-                </a>
-                <a href="">
-                    <li> | </li>
-                </a>
-                <a href="">
-                    <li> Atendimento e Televendas </li>
-                </a>
-                <a href="">
-                    <li> | </li>
-                </a>
-                <a href="">
-                    <li> Vendas corporativas </li>
-                </a>
-            </ul>
-        </div>
-
         <!-- Segundo nav pagina-->
         
         <div id="segNav">
@@ -68,18 +45,20 @@
             <div id="buscador">
                 <button id="todoSite">BUSQUEDA</button>
                 <input id="inputBuscar" type="" name="buscador">
-                <button id="botonLupa"><img src="files/lupa.png" width="100%" alt="lupa">
+                <button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="50%" alt="lupa">
                 </button>
             </div>
             <div id="usuario" style="margin:0.5% 20% 0 0 ; float:right;">
-                <img src="files/icono_Usuario.png" width="40%" alt="usuario">
+                <img src="../Libreria/files/Icons/Icono_Usuario.png"  width="40%" alt="usuario">
                 <li class="letraOlaDos" id="usuario1" >
                 <script>
                     nombre = sessionStorage.getItem('usuario');
                     document.getElementById("usuario1").innerHTML = nombre;
                 </script>   
                 </li>
-                <li class="letraOla" ><a href="index.html"> Salir </a> </li>
+                <li class="letraOla" ><a href="../Libreria/index.html">  
+                 <img src="../Libreria/files/Icons/salir.png" width="40%" alt="usuario"> </a>
+                </li>
             </div>
         </div>
         <!-- Tercer nav pagina-->
