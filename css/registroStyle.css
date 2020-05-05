@@ -140,7 +140,7 @@ hr {
 /* Set a style for the submit/register button */
 
 .registerbtn {
-	background-color: #009ADC;
+	background-color: #009DAC;
 	color: white;
 	padding: 16px 20px;
 	margin: 8px 0;
@@ -165,4 +165,26 @@ a {
 .signin {
 	background-color: #f1f1f1;
 	text-align: center;
+}
+
+/* Navbar */
+
+/* contenedor de todos los nav*/
+#contNav{
+	background-color: #009DAC;
+	width: 100%;
+	align-items: center;
+}
+
+#logo{
+	width: 15%;
+	height: 100%;
+	margin-left: 10%;
+}
+
+
+.imglogo{
+	width: 100px;
+	height: 100px;
+	margin-left: 240%;
 }

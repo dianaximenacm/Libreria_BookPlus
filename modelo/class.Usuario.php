@@ -5,7 +5,6 @@ class Usuario{
 	public function __construct() {
 
 	}
-
 	// la persona puede ingresar
 	public function nuevoUsuario($email,$password){
 		if(isset($email)&&empty($email)) {
@@ -95,7 +94,6 @@ class Usuario{
 		    }
 		    setTimeout(redireccionar,500);
 			</script>";
-        }
+    }
 }
-
 ?>

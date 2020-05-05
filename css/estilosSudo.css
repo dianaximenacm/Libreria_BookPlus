@@ -1,10 +1,9 @@
 /* estilos del body del documento*/
-
-body {
-    width: 1500px;
-    height: 1200px;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
-
 
 /* contenedor de todos los nav*/
 
@@ -14,7 +13,6 @@ body {
     height: 13%;
     float: left;
 }
-
 
 /* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/
 
@@ -43,14 +41,12 @@ li {
     font-family: Roboto, sans-serif;
     font-size: 80%;
     color: white;
-    float: left;
 }
 
 #priLi {
     margin-left: 50%;
     float: left;
 }
-
 
 /* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
 
@@ -83,11 +79,10 @@ li {
     height: 18%;
 }
 
-
 /* palabra Livaria Cultura*/
 
 #logoLetra {
-    width: 500% !important;
+    width: 150% !important;
     height: 350% !important;
     margin-top: -28%;
     margin-left: -15%;
@@ -96,18 +91,16 @@ li {
     color: #FAFAF6;
 }
 
-
 /* buscador de la paguina web*/
 
 #buscador {
-    background-color: white;
-    width: 32%;
-    height: 60%;
-    margin-top: 0.8%;
-    margin-left: 1%;
-    float: left;
+	background-color: white;
+	width: 32%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 1%;
+	float: left;
 }
-
 
 /*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
 
@@ -122,7 +115,6 @@ li {
     float: left;
 }
 
-
 /* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
 
 #inputBuscar {
@@ -134,7 +126,6 @@ li {
     float: left;
 }
 
-
 /* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
 
 #botonLupa {
@@ -144,7 +135,6 @@ li {
     border: none;
     float: left;
 }
-
 
 /* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
 
@@ -156,7 +146,6 @@ li {
     margin-left: 2%;
     float: right;
 }
-
 
 /* Son las letras que dicen Ola, bem vindo(a)*/
 
@@ -170,7 +159,6 @@ li {
     float: right;
 }
 
-
 /* tercer contenedor del nav*/
 
 #terNav {
@@ -178,18 +166,6 @@ li {
     width: 100%;
     float: left;
 }
-
-#principal {
-    background-image: url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201__340.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: inherit;
-    width: 100%;
-    height: 80%;
-    margin-top: 8%;
-    float: left;
-}
-
 
 /* clase que se para caracterizar los opciones de esta zona del nav*/
 
@@ -201,19 +177,12 @@ li {
     float: left;
 }
 
-.photo {
-    background: red;
-    width: 100%;
-    height: 12%;
-}
-
-
 /* caracteristica de la lista accioes del super administrador*/
 
 .menu {
     width: 100%;
     margin: 0% auto 0% auto;
-    background-color: lightgrey;
+    background-color: #FAFAF6;
     opacity: 1;
     color: black;
     box-shadow: black 100px solid;
@@ -264,7 +233,6 @@ li {
     opacity: 1;
 }
 
-
 /* Perfil */
 
 .perfil {
@@ -276,7 +244,6 @@ li {
     border-radius: 50%;
 }
 
-
 /*Consulta de producto*/
 
 .consultarProd {
@@ -284,18 +251,30 @@ li {
 }
 
 .btnForm {
-    background: rgb(6, 241, 163);
-    border: none;
-    outline: none;
-    width: 15%;
-    color: rgb(16, 14, 165);
-    font-size: 160%;
-    border-radius: 80%;
-    margin-top: 2%;
+    background-color: #009DAC;
+    width: 20%;
+    height: 60%;
+    margin-top: 3%;
+    margin-left: 0.5%;
+    font-family: Roboto;
+    font-size: 100%;
+    color: white;
+    border-radius: 2px;
+    float: left;
 }
 
-
 /*Agregar Prod*/
+
+#principal {
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201__340.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: inherit;
+    width: 100%;
+    height: 150%;
+    margin-top: 8%;
+    float: left;
+}
 
 .datos {
     border: none;
@@ -304,10 +283,11 @@ li {
     outline: none;
     height: 120%;
     color: black;
-    font-size: 100%;
+    font-size: 140%;
     font-weight: bold;
-    padding: 2%;
-    text-align: center;
+    padding: 3%;
+    text-align: left;
+    margin: 6% 0 6% 0;
 }
 
 .campos {
@@ -318,29 +298,46 @@ li {
 .campos:target {
     display: block;
     transition: opacity 1.5s;
-    border: 2px solid black;
-    border-radius: 30%;
-    margin: 0 16% 0 16%;
+    border: 1px solid #6BFFCE;
+    border-radius: 5%;
+    margin: 10% 10% 10% 0;
     padding: 4% 10%;
-    background: lightgray;
+    background: #EBFDE3;
+    height: 18%;
+    overflow: auto;
+    width: 20%;
+    margin-top: 10%;
+    float: right;
+    margin-right: 10%;
 }
 
+.camposDos:target {
+    display: block;
+    transition: opacity 1.5s;
+    border: 1px solid #6BFFCE;
+    border-radius: 10%;
+    margin: 10% 10% 10% 0;
+    padding: 4% 10%;
+    background: #EBFDE3;
+    width: 20%;
+    float: right;
+    height: 18%;
+    overflow: auto;
+}
 
-/*------------------------------------------------ codigo a cambiar--------------*/
-
-
-/*    animacion     */
-
+.camposDos {
+    text-align: center;
+    display: none;
+}
 
 /*--------------------------------------------------------------------------------*/
-
 
 /* footer de mi paguina */
 
 footer {
     background-color: #FFFFFF;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin-top: 1%;
     float: left;
 }
@@ -386,7 +383,7 @@ footer {
 
 #botCorreo {
     background-color: transparent;
-    width: 15%;
+    width: 20%;
     height: 60%;
     margin-top: 3%;
     margin-left: 0.5%;
@@ -475,16 +472,10 @@ h4 {
     float: left;
 }
 
-#bancosAcei {
-    background-color: transparent;
-    width: 100%;
-    height: 25%;
-    margin-top: 10%;
-    float: left;
-}
-
 h5 {
     margin-top: 24%;
     margin-left: 15%;
     color: #664664AF;
 }
+
+

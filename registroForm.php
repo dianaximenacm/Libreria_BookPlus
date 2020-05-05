@@ -8,6 +8,13 @@
 </head>
 <body>
 
+	<!-- primer nav de mi paguina-->
+	<div id="contNav">
+        <div id="logo">
+			<img class="imglogo" src="files/logo.png" alt="">
+        </div>	
+	</div>	
+
 	<div class="container" id="container">			 
 			<div class="contenidoLibro">
 				<div class="libro">

@@ -1,30 +1,30 @@
-/* NAV -header*/
-
+/* estilos del body del documento*/
 body{
-	margin: auto;
-	font-family: 'Old Standard TT', serif;
-
+	margin: 0;
+	padding: 0;
 }
 /* contenedor de todos los nav*/
 #contNav{
 	background-color: #008698;
-	
+	width: 100%;
+	height: 13%;
 	float: left;
 }
 /* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/;
 #priNav{
 	background-color: #009DAC;
-
+	width: 100%;
+	height: 20%;
 	float: left;
 }
 
 ul{
-	
+	width: 90%;
+	height: 80%;
 	margin-top: 0.1%;
 	margin-left: 10%;
 	text-decoration: none;
 	float: left;
-	width: 100%;
 }
 
 li{
@@ -42,13 +42,12 @@ li{
 	margin-left: 50%;
 	float: left;
 }
-
-
-
+/* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
 #segNav{
 	background-color: #009DAC;
 	width: 100%;
 	height: 50%;
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;	
 	float: left;
@@ -56,22 +55,31 @@ li{
 
 #logo{
 	background-color: #009DAC;
-	width: 15%;
+	width: 20%;
 	height: 100%;
-	margin-left: 10%;
+	margin-left: 5%;
 	float: left;
 }
-/* palabra Libreria*/
+/* palabra Livaria Cultura*/
+#logoIma{
+	width: 20%;
+	height: 80%;
+	margin-top: 2%;
+	margin-left: 2%;
+	float: left;
+}
+
 #logoLetra{
-	width: 100%;
+	width: 60%;
 	height: 80%;
 	margin-top: 5%;
-	margin-left: 10%;
+	margin-left: 2%;
 	font-family: sans-serif;
 	font-size: xx-large;
 	color: #FAFAF6;
+	float: left;
 }
-/* buscador*/
+/* buscador de la paguina web*/
 #buscador{
 	background-color: white;
 	width: 32%;
@@ -80,7 +88,9 @@ li{
 	margin-left: 1%;
 	float: left;
 }
-/*Espacio a la izquierda de la barra de busqueda*/
+
+
+/*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
 #todoSite{
 	background-color:transparent;
 	width: 20%;
@@ -97,7 +107,15 @@ li{
 	height: 82%;
 	margin-top: 0.4%;
 	margin-left: 2%;
+	text-align: center;
+	font-size: 140%;
 	border: none;
+	float: left;
+}
+
+#formBuscador{
+	width: 100%;
+	height: 100%;
 	float: left;
 }
 /* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
@@ -117,26 +135,17 @@ li{
 	margin-left: 2%;
 	float: left;
 }
-/* Son las letras que dicen bienvenido*/
+/* Son las letras que dicen Ola, bem vindo(a)*/
 #letraOla {
 	width: 65%;
-	height: 40%;
+	height: 80%;
 	margin-top: 5%;
 	font-family: Roboto;
 	font-size: 90%;
 	color: #FFFFFF;
 	float: right;
 }
-/* es el hipervinculo que abre la ventana de registrarse o ingresar"*/
-#letraEntre {
-	width: 65%;
-	height: 40%;
-	margin-top: -16%;
-	font-family: Roboto;
-	font-size: 80%;
-	color: #FFFFFF;
-	float: right;
-}
+
 /* es el espacio se que le dio al carro de ventas de la paguina*/
 #pedidos{
    background-color: transparent; 
@@ -146,11 +155,70 @@ li{
    margin-left: 2%;
    float: left;
 }
+
+#cerrarSes{
+	background-color: transparent;
+	width: 5%;
+	height: 60%;
+	margin-top: 1.5%;
+	font-family: sans-serif;
+	font-size: 120%;
+	color: white;
+	float: left;
+}
 /* tercer contenedor del nav*/
 #terNav{
 	background-color: #FAFAF6;
 	width: 100%;
 	height: 30%;
+	float: left;
+}
+
+#formDatosusu{
+	background-color: #009DAC88;
+	width: 15%;
+	height: 50%;
+	display: none;
+	margin-top: 7%;
+	margin-left: 15%;
+	position: absolute; 
+}
+#datosForm{
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	float: left;
+}
+#fotoAct{
+	background-image: url('files/Icons/avatar.webp');
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-position: center;
+	background-size: cover;
+	width:60%;
+	height: 40%;
+	margin-top: 2%;
+	margin-left: 20%;
+	float: left;
+}
+
+.inputDatusu{
+	width: 90%;
+	height: 8%;
+	margin-top: 2%;
+	margin-left: 5%;
+	text-align: center;
+	float: left;
+}
+
+.botnavUsuario{
+    background-color: transparent;
+	width: 65%;
+	height: 90%;
+	margin-top: 3%;
+	font-size: 100%;
+	text-align: center;
+	border: none;
 	float: left;
 }
 /* clase que se para caracterizar los opciones de esta zona del nav*/ 
@@ -174,34 +242,6 @@ li{
 	text-align: center;
 	color: #009ADC;
 }
-/* este da las caracteristicas a la tabla que aparece al escojer la opcion compre por categorias*/
-#subCompras{
-	background-color: #FAFAF6;
-	width: 16%;
-    height: 65%;
-    margin-top: 1.9%;
-    margin-left: 13%;
-    display: none;
-    position: fixed;
-}
-/* Da las caracteristicas a todas las subopciones que aparecen al seleccionar una opcion del nav3*/
-.subiconosNav{
-	width: 100%;
-	height: 6.5%;
-	margin-top: 1.8%;
-	margin-left: 5%;
-	font-family: sans-serif;
-	font-size: x-large;
-	color: #44525D;
-	float: left;
-}
-/* da el efecto del color #009ADC que aparece cuando el mouse esta encima de una subopcion*/
-#subCompras :hover{
-	width: 95%;
-	margin-left: 5%;
-	background-color: rgba(0,157,172,0.4);
-	transition: background-color 1s;
-}
 
 #ExploreCul li{
 	margin-top: 5%;
@@ -210,52 +250,154 @@ li{
 	color: red;
 }
 
-#subExplorecul{
-	background-color: #FAFAF6;
-	width: 16%;
-	height: 30%;
-	margin-top: 1.9%;
-	margin-left: 30%;
-	display: none;
-	position: fixed;
-}
-#subExplorecul li:hover{
-	width: 95%;
-	height : 12%;
-	background-color: rgba(0,157,172,0.4);
-	transition: background-color 1s;
-}
-#subExplorecul li{
-	margin-top: 11%;
-	margin-left: -24%;
-}
-/* nav3*/
+/* este estilo es de cultura indica lista nav3*/
 #culturaLis li{
 	margin-top: 5%;
 	font-family: sans-serif;
 	font-size: 100%;
 	color: #44525D;
 }
-/*  nav3*/
+/* este estilo es de central de ofertas nav3*/
 #centralOfer li{
 	margin-top: 5%;
 	font-family: sans-serif;
 	font-size: 100%;
 	color: #44525D;
 }
+/* este estilo es para eventos nav3*/
+#eventos li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+
+
+
+/*------------------------------------------------ codigo a cambiar--------------*/
+#principal{
+	background-image: url('https://cdn.pixabay.com/photo/2017/12/22/08/01/literature-3033196_1280.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	background-attachment: fixed;
+	width: 90%;
+	height: 100%;
+	margin-top: 1%;
+	margin-left: 5%;
+	float:left;
+}
+
+#carnet{
+	background-color: white;
+	width: 40%;
+	height: 30%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 3%;
+	border-radius: 10px;
+	border:2px solid #1718184F;
+	float:left;
+}
+
+#catUsuario{
+	background-color: transparent;
+	width : 90%;
+	height: 260px;
+	margin-top: 80px;
+	margin-left: 5%;
+	float: left;
+}
+
+.categorias{
+	background-image: url('https://cdn.pixabay.com/photo/2012/04/24/23/49/book-41203__340.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: scroll;
+	width: 18%;
+	height: 90%;
+	margin-left: 2%;
+	float: left;
+}
+
+.catBotones{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	font-size: 200%;
+	color: white;
+	border: none;
+}
+
+#izqCarnet{
+	width: 30%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 7%;
+	float: left;
+}
+	
+#derCarnet{
+	width: 50%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 6%;
+	float: left;
+}
+
+#foto{
+	background-color: #17181824;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 90%;
+	height: 70%;
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-bottom: 4%;
+	border-radius: 10%;
+	float: left;
+
+}
+
+#nomLibreria{
+	width: 90%;
+	height: 20%;
+	margin-top: 5%;
+	margin-left: 5%;
+	float: left;
+}
+
+.datCarnet{
+	background-color: #17181812;
+	width: 90%;
+	height: 15%;
+	margin-top: 20px;
+	margin-left: 5%;
+	font-family: sans-serif;
+	font-size: 120%;
+	text-align: center;
+	border-radius: 10px;
+	float: left;
+}
+
+#contenedorBus{
+	background-color: rgba(255,255,255,0.3);
+	width: 90%;
+	height: 40%;
+	margin-left: 5%;
+	float: left;
+}
+
+/*--------------------------------------------------------------------------------*/
 
 /* footer de mi paguina */
 footer{
 	background-color: #FFFFFF;
 	width: 100%;
-	height: 100%;
+	height: 30%;
+	margin-top: 1%;
 	float: left;
 }
 
-.infofooter{
-font-size: 20px;
-
-}
 #redSocial{
 	background-color: #009DAC;
 	width: 100%;
@@ -296,7 +438,7 @@ font-size: 20px;
 }
 #botCorreo{
 	background-color: transparent;
-    width: 33%;
+    width: 15%;
 	height: 60%;
 	margin-top: 3%;
 	margin-left: 0.5%;
@@ -380,6 +522,7 @@ h4{
 	height : 4%;
 	margin-top: 5%;
 	margin-left: 2.5%;
+	margin-right: 5%;
 	float: left;
 }
 
@@ -391,8 +534,13 @@ h4{
 	float: left;
 }
 
+#derechos{
+	width: 100%;
+	height: 10%;
+	float: left;
+}
 h5{
-	margin-top: 24%;
-	margin-left: 15%;
+	margin-top: 2%;
+	margin-left: 35%;
 	color: #664664AF;
 }
