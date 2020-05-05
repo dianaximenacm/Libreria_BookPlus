@@ -1,0 +1,145 @@
+/* footer de mi paguina */
+footer{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+.infofooter{
+font-size: 20px;
+
+}
+#redSocial{
+	background-color: #009DAC;
+	width: 100%;
+	height: 15%;
+	float:  left;
+}
+
+#letrasRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 12%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+#emailRed{
+	background-color: #009DAC;
+	width: 25%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 120%;
+	float: left;
+}
+
+#digEmail{
+	width: 80%;
+	height: 40%;
+	margin-top: 4%;
+	font-family: Roboto;
+	font-size: 100%;
+	border-radius: 2px;
+	float: left;
+}
+#botCorreo{
+	background-color: transparent;
+    width: 33%;
+	height: 60%;
+	margin-top: 3%;
+	margin-left: 0.5%;
+	font-family: Roboto;
+	font-size: 100%;
+	color: white;
+	border-radius: 2px;
+	float: left;
+}
+
+#letraRed{
+	background-color: #009DAC;
+	width: 10%;
+	height: 60%;
+	margin-top: 1.2%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size :100%;
+	float: left;
+}
+#iconosRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+.icono{
+	background-color: transparent;
+	width: 10%;
+	height: 15%;
+	margin-top: 6%;
+	margin-left: 10%;
+	float: left;
+}
+#pagamenServicio{
+   background-color: rgba(255,255,245,0.8);
+   width: 150%;
+   height: 60%;
+   float:  left;
+
+}
+
+.cuadrosPagamento{
+	width: 16%;
+	height: 100%;
+	float: left;
+}
+
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: black;
+}
+
+.estiloA{
+	width: 100%;
+	height: 2%;
+	margin-top: 2%;
+}
+
+h4{
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-family: sans-serif;
+	color: #009DAC;
+}
+#pagos{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#pagoTargeta{
+	background-color: transparent;
+	width: 95%;
+	height : 4%;
+	margin-top: 5%;
+	margin-left: 2.5%;
+	float: left;
+}
+
+
+h5{
+	margin-top: 7%;
+	margin-left: 7%;
+	color: #664664AF;
+}

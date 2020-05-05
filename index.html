@@ -1,50 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Book Plus </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-        <link rel="stylesheet" href="../Libreria/css/contentindex.css">
-        <script>
-            function ver(dato){
-}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Libreria/css/header.css">
+    <link rel="stylesheet" href="../Libreria/css/slider.css">
+    <link rel="stylesheet" href="../Libreria/css/footer.css">
 
-function mostrar(posicion){
-	var dato = posicion;
-	document.getElementById(posicion).style.display = "block";
-}
-
-function esconder(posicion){
-	var dato = posicion;
-	document.getElementById(posicion).style.display = "none";
-}
-        </script>
-    </head>
+    <title>Book Plus</title>
+</head>
     <body>
-        <header>
-        <!-- contenedor de todos los nav de la paguina-->
-        <div id="contNav">
-            <!-- primer nav de mi paguina-->
-        	<div id="priNav">
-        		<ul>
+        <header class="contenedor">
+
+            <nav class="contenedorMenu1">
+        		<ul class="menu1">
         			<a href=""><li id="priLi">Tienda</li></a>
         			<a href=""><li> | </li></a>
         			<a href=""><li> Entrega a domcicilio</li></a>
         			<a href=""><li> | </li></a>
         			<a href=""><li> Ventas corporativas </li></a>
         		</ul>
-        	</div>
-            <!-- Segundo nav de mi paguina-->
-        	<div id="segNav">
+            </nav>
+            <div class="contenedorMenu2">
         		<div id="logo">
-        			<p id="logoLetra"> Book Plus</p>
+                        <a class="linkLogo" href="#">
+                            <img class="imagenLogoBig" src="../Libreria/files/Icons/logo.png" alt="LogoBig">
+                            <img class="imagenLogoSmall" src= "../Libreria/files/Icons/logo.png" alt="LogoSmall">
+                        </a>
         		</div>	
         		<div id="buscador">
                 <form method="POST" action="busqueda.php">
         			<button id="todoSite">BUSQUEDA</button>
         			<input id="inputBuscar" type="" name="buscador">
-        			<button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="100%" alt="lupa"></button>
+        			<button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="50%" alt="lupa"></button>
                 </form>
         		</div>	
         		<div id="usuario">
@@ -55,63 +44,39 @@ function esconder(posicion){
         		<div id="pedidos">
         			<img src="../Libreria/files/Icons/compras.png" width="70%" alt="carrito_compras">
         		</div>	
-        	</div>
-            <!-- tercer nav de mi paguina-->
-        	<div id="terNav">
-        		<div id="compreCat" class="iconosNav" onmouseover="mostrar('subCompras');" onmouseout="esconder('subCompras')">
-                    <ul>
-                    	<li> Categorias </li>
-        		</div>
-                <!-- esta son los subOpciones de compre por categoria que se encuentra en ele tercer nav-->
-        		<div id="subCompras" onmouseover="mostrar('subCompras');" onmouseout="esconder('subCompras')" >
-        			<li class="subiconosNav">Novela</li><br>
-                    <li class="subiconosNav">Colección</li><br>
+            </div>
+            
+            <input type="checkbox" id="botonMenu">
+            <label class="imagenMenu" id="iconoMenu" for="botonMenu">
+                    <img src="../Libreria/files/Icons/iconomenu.png" alt="Icono_Menu" width="35px" height="35px">
+            </label>
+            
+
+            <nav class="contenedorMenu">
+                <ul class="menu">
+                    <a href="#parrafoBienvenida">
+                        <li>Nosotros Somos</li>
+                    </a>
+                    <a href="#contentienda">
+                        <li> Categorias</li>
+                    </a>
+                    <a href="#section3">
+                        <li>Subcategorias </li></a>
+
+                        <a href="#contentienda">
+                            <li> Libros Nuevos </li>
+                        </a>
+                        <a href="#section3">
+                            <li>Libros Usados </li></a>
+
                     
-        		</div>	
-                <!-- Explore Cultura-->
-        		<div id="ExploreCul" class="iconosNav" onmouseover="mostrar('subExplorecul');" onmouseout="esconder('subExplorecul')" >
-        			<ul>
-        				<li>Subcategorias</li>
-        			</ul>
-        		</div>
-                <!-- Estos son las sunOpciones de Explore Cultura-->
-        		<div id="subExplorecul" onmouseover="mostrar('subExplorecul');" onmouseout="esconder('subExplorecul')">
-        			<ul>  
-                        <li class="subiconosNav">Novela Gráfica</li> <br>
-                        <li class="subiconosNav"> Colección Fantastica </li><br>
-                        <li class="subiconosNav"> Supense </li> <br>
-                        <li class="subiconosNav"> Novela Psicológica </li> <br>
-                        <li class="subiconosNav"> Novela Autobiografica </li> <br>
-                        <li class="subiconosNav"> Novela Histórica</li> <br>
-                        <li class="subiconosNav"> Novela Distópica</li> <br>
-                        <li class="subiconosNav"> Colección Distópica</li> <br>
-                    </ul>
+                </ul>
+            </nav>
+         </header>
 
-        			</ul>
-        		</div>	
-                <!--cultura indica lista-->
-        		<div id="culturaLis" class="iconosNav">
-        			<ul>
-        				<a href=""><li>Libros Nuevos </li></a>
-        			</ul>
-        		</div>
-                <!-- Central de ofertas-->
-        		<div id="centralOfer" class="iconosNav">
-        			<ul>
-        				<a href=""><li>Libros Usados</li></a>
-        			</ul>
-        		</div>
-                           
-        </div>
-
-</header>     
-
- <!-- Slider-->
-         <section class="sliderdivtext">        
-    
-    
+         <!-- Slider-->
+         <section class="inicio">        
             <div class="textoslider"> 
-       
                 <h1 class="tituloslider">
                     ENTRE LA LECTURA Y LA CULTURA
                     <br>
