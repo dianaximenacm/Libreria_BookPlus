@@ -11,7 +11,7 @@
 	<!-- primer nav de mi paguina-->
 	<div id="contNav">
         <div id="logo">
-			<img class="imglogo" src="files/logo.png" alt="">
+			<img class="imglogo" src="files/Icons/logo.png" alt="">
         </div>	
 	</div>	
 

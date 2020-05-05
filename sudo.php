@@ -42,11 +42,11 @@
             <div id="buscador">
                 <button id="todoSite">BUSQUEDA</button>
                 <input id="inputBuscar" type="" name="buscador">
-                <button id="botonLupa"><img src="files/lupa.png" width="100%" alt="lupa">
+                <button id="botonLupa"><img src="files/Icons/lupa.png" width="100%" alt="lupa">
                 </button>
             </div>
             <div id="usuario" style="margin:0.5% 20% 0 0 ; float:right;">
-                <img src="files/usuarioDos.png" width="40%" alt="usuario">
+                <img src="files/Icons/Icono_Usuario.png" width="40%" alt="usuario">
                 <li class="letraOlaDos" ><a href="index.html"> Bienvenido</a> </li>
                 <li class="letraOla" ><a href="index.html"> Salir </a> </li>
             </div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,227 +11,258 @@
 
     <title>Book Plus</title>
 </head>
-    <body>
-        <header class="contenedor">
 
-            <nav class="contenedorMenu1">
-        		<ul class="menu1">
-        			<a href=""><li id="priLi">Tienda</li></a>
-        			<a href=""><li> | </li></a>
-        			<a href=""><li> Entrega a domcicilio</li></a>
-        			<a href=""><li> | </li></a>
-        			<a href=""><li> Ventas corporativas </li></a>
-        		</ul>
-            </nav>
-            <div class="contenedorMenu2">
-        		<div id="logo">
-                        <a class="linkLogo" href="#">
-                            <img class="imagenLogoBig" src="../Libreria/files/Icons/logo.png" alt="LogoBig">
-                            <img class="imagenLogoSmall" src= "../Libreria/files/Icons/logo.png" alt="LogoSmall">
-                        </a>
-        		</div>	
-        		<div id="buscador">
+<body>
+    <header class="contenedor">
+
+        <nav class="contenedorMenu1">
+            <ul class="menu1">
+                <a href="">
+                    <li id="priLi">Tienda</li>
+                </a>
+                <a href="">
+                    <li> | </li>
+                </a>
+                <a href="">
+                    <li> Entrega a domcicilio</li>
+                </a>
+                <a href="">
+                    <li> | </li>
+                </a>
+                <a href="">
+                    <li> Ventas corporativas </li>
+                </a>
+            </ul>
+        </nav>
+        <div class="contenedorMenu2">
+            <div id="logo">
+                <a class="linkLogo" href="#">
+                    <img class="imagenLogoBig" src="../Libreria/files/Icons/logo.png" alt="LogoBig">
+                    <img class="imagenLogoSmall" src="../Libreria/files/Icons/logo.png" alt="LogoSmall">
+                </a>
+            </div>
+            <div id="buscador">
                 <form method="POST" action="busqueda.php">
-        			<button id="todoSite">BUSQUEDA</button>
-        			<input id="inputBuscar" type="" name="buscador">
-        			<button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="50%" alt="lupa"></button>
+                    <button id="todoSite">BUSQUEDA</button>
+                    <input id="inputBuscar" type="" name="buscador">
+                    <button id="botonLupa"><img src="../Libreria/files/Icons/lupa.png" width="50%" alt="lupa"></button>
                 </form>
-        		</div>	
-        		<div id="usuario">
-        			<img src="../Libreria/files/Icons/Icono_Usuario.png" width="30%" alt="usuario">
-        			<span id="letraOla">Bienvenidos</span>
-        			<a href="../Libreria/registroForm.php" id="letraEntre">Ingresa o Registrate</a>
-        		</div>	
-        		<div id="pedidos">
-        			<img src="../Libreria/files/Icons/compras.png" width="70%" alt="carrito_compras">
-        		</div>	
             </div>
-            
-            <input type="checkbox" id="botonMenu">
-            <label class="imagenMenu" id="iconoMenu" for="botonMenu">
-                    <img src="../Libreria/files/Icons/iconomenu.png" alt="Icono_Menu" width="35px" height="35px">
-            </label>
-            
-        			</ul>
-        		</div>	
-                <!--cultura indica lista-->
-        		<div id="culturaLis" class="iconosNav">
-        			<ul>
-        				<a href=""><li>Libros Nuevos </li></a>
-        			</ul>
-        		</div>
-                <!-- Central de ofertas-->
-        		<div id="centralOfer" class="iconosNav">
-        			<ul>
-        				<a href=""><li>Libros Usados</li></a>
-        			</ul>
-        		</div>
-            </div>              
+            <div id="usuario">
+                <img src="../Libreria/files/Icons/Icono_Usuario.png" width="30%" alt="usuario">
+                <span id="letraOla">Bienvenidos</span>
+                <a href="../Libreria/registroForm.php" id="letraEntre">Ingresa o Registrate</a>
+            </div>
+            <div id="pedidos">
+                <img src="../Libreria/files/Icons/compras.png" width="70%" alt="carrito_compras">
+            </div>
         </div>
-            <nav class="contenedorMenu">
-                <ul class="menu">
-                    <a href="#parrafoBienvenida">
-                        <li>Nosotros Somos</li>
-                    </a>
-                    <a href="#contentienda">
-                        <li> Categorias</li>
-                    </a>
-                    <a href="#section3">
-                        <li>Subcategorias </li></a>
 
-                        <a href="#contentienda">
-                            <li> Libros Nuevos </li>
-                        </a>
-                        <a href="#section3">
-                            <li>Libros Usados </li></a>
-                </ul>
-            </nav>
-         </header>
+        <input type="checkbox" id="botonMenu">
+        <label class="imagenMenu" id="iconoMenu" for="botonMenu">
+            <img src="../Libreria/files/Icons/iconomenu.png" alt="Icono_Menu" width="35px" height="35px">
+        </label>
 
-         <!-- Slider-->
-         <section class="inicio">        
-            <div class="textoslider"> 
-                <h1 class="tituloslider">
-                    ENTRE LA LECTURA Y LA CULTURA
-                    <br>
-                    <h2 class= "tituloslider2"> QUIENES SOMOS </h2> 
-                </h1>
+
+        <nav class="contenedorMenu">
+            <ul class="menu">
+                <a href="#parrafoBienvenida">
+                    <li>Nosotros Somos</li>
+                </a>
+                <a href="#contentienda">
+                    <li> Categorias</li>
+                </a>
+                <a href="#section3">
+                    <li>Subcategorias </li>
+                </a>
+
+                <a href="#contentienda">
+                    <li> Libros Nuevos </li>
+                </a>
+                <a href="#section3">
+                    <li>Libros Usados </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider-->
+    <section class="inicio">
+        <div class="textoslider">
+            <h1 class="tituloslider">
+                ENTRE LA LECTURA Y LA CULTURA
                 <br>
-            </div>
-            <div class="slider">
-                <ul>
-                    <li>
-            <img src= "../Libreria/files/Icons/publicidad1.jpg" alt="d1">
-            </li>
-                    <li>
-            <img src="../Libreria/files/Icons/depresion-confinamiento.jpg" alt="ds2">
-            </li>
-                    <li>
-            <img src="../Libreria/files/Icons/pasto.jpg" alt="ds3">
-            </li>
-                    <li>
-            <img src="../Libreria/files/Icons/pareja.jpg" alt="ds4">
-            </li>
-                </ul>
-            </div>
+                <h2 class="tituloslider2"> QUIENES SOMOS </h2>
+            </h1>
+            <br>
+        </div>
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="../Libreria/files/Icons/publicidad1.jpg" alt="d1">
+                </li>
+                <li>
+                    <img src="../Libreria/files/Icons/depresion-confinamiento.jpg" alt="ds2">
+                </li>
+                <li>
+                    <img src="../Libreria/files/Icons/pasto.jpg" alt="ds3">
+                </li>
+                <li>
+                    <img src="../Libreria/files/Icons/pareja.jpg" alt="ds4">
+                </li>
+            </ul>
+        </div>
 
-        </section>
+    </section>
 
-        <p>
-            Una generación que desea abrir ventanas a mundos posibles a travez de la lectura 
-            Siguiendo los pasos de grandes en la historia, cada  escritor y lector tan diferente, 
-            tan poco convencional, tan único. 
-           <b> Asi es la comunidad " Book Plus" </b>
-        </p>
+    <p>
+        Una generación que desea abrir ventanas a mundos posibles a travez de la lectura
+        Siguiendo los pasos de grandes en la historia, cada escritor y lector tan diferente,
+        tan poco convencional, tan único.
+        <b> Asi es la comunidad " Book Plus" </b>
+    </p>
 
-<article class="articlecompra">
+    <article class="articlecompra">
 
         <section class="contentienda">
-            <span> <h1 class="titulocard1"> AMPLIA TU UNIVERSO LECTOR  </h1>  </span>
-            <div class= "container">
-               
-                <div class="card" id="card1" >
-                <img src="../Libreria/files/lb_mundofeliz.jpg" alt="anillo" class="imgh1">
-                <h4> Novela <br>
-                </h4>
-                <a href="#section3" target="_blank"> Compra aquí</a> 
+            <span>
+                <h1 class="titulocard1"> AMPLIA TU UNIVERSO LECTOR </h1>
+            </span>
+            <div class="container">
+
+                <div class="card" id="card1">
+                    <img src="../Libreria/files/lb_mundofeliz.jpg" alt="anillo" class="imgh1">
+                    <h4> Novela <br>
+                    </h4>
+                    <a href="#section3" target="_blank"> Compra aquí</a>
                 </div>
-        
-                        <div class="card" id="cardtwo">
-            
-                         <img src="../Libreria/files/lb_doctor.jpg" alt="Comienzo" class="imgh2">
-                         <h4> Suspenso y terror 
-                         </h4>
-                         <a href="#section3" target="_blank"> Compra aquí</a> 
-        
-                      </div>
-                                <div class="card"  id=card2>
-                                <img src="../Libreria/files/lb_eldest.jpg" alt="Comienzo" class="imgh3">
-                                <h4>  Fantasia </h4> 
-                                     <a href="#section3" target="_blank"> Compra aquí</a> 
-                                </div>
-        
-                                <div class="card"  id=card2>
-                                    <img src="../Libreria/files/lb_vendetta.jpg" alt="Comienzo" class="imgh3">
-                                    <h4> Novela Gráfica</h4>    
-                                    </p>
-                                    <a href="#section3" target="_blank"> Compra aquí</a> 
-                                    </div>
-         
+
+                <div class="card" id="cardtwo">
+
+                    <img src="../Libreria/files/lb_doctor.jpg" alt="Comienzo" class="imgh2">
+                    <h4> Suspenso y terror
+                    </h4>
+                    <a href="#section3" target="_blank"> Compra aquí</a>
+
+                </div>
+                <div class="card" id=card2>
+                    <img src="../Libreria/files/lb_eldest.jpg" alt="Comienzo" class="imgh3">
+                    <h4> Fantasia </h4>
+                    <a href="#section3" target="_blank"> Compra aquí</a>
+                </div>
+
+                <div class="card" id=card2>
+                    <img src="../Libreria/files/lb_vendetta.jpg" alt="Comienzo" class="imgh3">
+                    <h4> Novela Gráfica</h4>
+                    </p>
+                    <a href="#section3" target="_blank"> Compra aquí</a>
+                </div>
+
         </section>
 
-</article>  
-<footer>
-    <div id="redSocial">
-        <div id="letrasRed">
-            ESCRIBA SU E-MAIL Y GANE UN CUPÓN PARA SU PRIMERA COMPRA
-        </div>
-        <form  id="emailRed">
-            <input id="digEmail">
-            <button id="botCorreo" type="submit">enviar</button>
-        </form>
-        <div id="letraRed">
-            REDES SOCIALES
-        </div>
-        <div id="iconosRed">
-            <div>
-                <a href=""><img src="https://image.flaticon.com/icons/svg/1312/1312139.svg" alt="facebook" class="icono" ></a>
+    </article>
+    <footer>
+        <div id="redSocial">
+            <div id="letrasRed">
+                ESCRIBA SU E-MAIL Y GANE UN CUPÓN PARA SU PRIMERA COMPRA
             </div>
-            <div>
-                <a href=""><img src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="twiter" class="icono"></a>
-            </div> 
-            <div>
-                <a href=""><img src="https://www.flaticon.es/premium-icon/icons/svg/2392/2392487.svg" alt="instagram" class="icono"></a>
-            </div>  
-            <div>
-                <a href=""><img src="https://image.flaticon.com/icons/svg/1409/1409936.svg" alt="youtube" class="icono"></a>
-            </div> 
-            <div>
-                <a href=""><img src="https://image.flaticon.com/icons/svg/2807/2807138.svg" class="icono" alt="inicio"></a>
+            <form id="emailRed">
+                <input id="digEmail">
+                <button id="botCorreo" type="submit">enviar</button>
+            </form>
+            <div id="letraRed">
+                REDES SOCIALES
+            </div>
+            <div id="iconosRed">
+                <div>
+                    <a href=""><img src="https://image.flaticon.com/icons/svg/1312/1312139.svg" alt="facebook"
+                            class="icono"></a>
+                </div>
+                <div>
+                    <a href=""><img src="https://image.flaticon.com/icons/svg/185/185961.svg" alt="twiter"
+                            class="icono"></a>
+                </div>
+                <div>
+                    <a href=""><img src="https://www.flaticon.es/premium-icon/icons/svg/2392/2392487.svg"
+                            alt="instagram" class="icono"></a>
+                </div>
+                <div>
+                    <a href=""><img src="https://image.flaticon.com/icons/svg/1409/1409936.svg" alt="youtube"
+                            class="icono"></a>
+                </div>
+                <div>
+                    <a href=""><img src="https://image.flaticon.com/icons/svg/2807/2807138.svg" class="icono"
+                            alt="inicio"></a>
+                </div>
             </div>
         </div>
-    </div>  
-    <div id="pagamenServicio">
-        <div  class="cuadrosPagamento">
-            
-        </div>
-        <div class="cuadrosPagamento">
-            <a href="" ><h4>Quienes Somos</h4> </a><br>
-            <a href=""><p class="estiloA">Trabaje con nosotos </p></a><br>
-            <a href=""><p class="estiloA">Nuetras tiendas</p></a><br>
-        </div> 
-        <div  class="cuadrosPagamento">
-            <a href=""><h4>Contactanos</h4></a><br>
-            <a href=""><p class="estiloA">Politicas de devolución </p></a><br>
-            <a href=""><p class="estiloA"> Politica de ventas</p></a><br>
-           
-        </div>  
-        <div  class="cuadrosPagamento">
-            <a href=""><h4>Más lecturas</h4></a><br>
-            <a href=""><p class="estiloA">Biblioteca</p></a><br>
-        </div> 
-        <div id="pagos">
-            <h4> FORMAS DE PAGO </h1>
-            <div id="pagoTargeta">
-                <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/visa.png?v=636991622524900000" alt="visa"></a>
-                <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/master.png?v=636991622505470000" alt="MasterCard"></a>
-                <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/american.png?v=636991622435270000" alt="American Express"></a>
-                <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/pay.png?v=636991622515770000" alt="PayPall"></a>
-                <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/diners.png?v=636991622465430000" alt="Dinners"></a>
-                
-            </div>    
-             
-           
-    </div> 
-    <h5>
-        Libreria BOOK PLUS, todos los derechos reservados.© COPYRIGHT 2020 Bogotá <br>
-        Realizada por <a href="https://github.com/dianaximenacm/Libreria" target="_blank">Grupo Fullstack</a> para 
-        <a href="https://www.bictia.com" target="_blank"> Bictia Institute of technology</a>.
-    </h5>          
-</footer>      
+        <div id="pagamenServicio">
+            <div class="cuadrosPagamento">
+
+            </div>
+            <div class="cuadrosPagamento">
+                <a href="">
+                    <h4>Quienes Somos</h4>
+                </a><br>
+                <a href="">
+                    <p class="estiloA">Trabaje con nosotos </p>
+                </a><br>
+                <a href="">
+                    <p class="estiloA">Nuetras tiendas</p>
+                </a><br>
+            </div>
+            <div class="cuadrosPagamento">
+                <a href="">
+                    <h4>Contactanos</h4>
+                </a><br>
+                <a href="">
+                    <p class="estiloA">Politicas de devolución </p>
+                </a><br>
+                <a href="">
+                    <p class="estiloA"> Politica de ventas</p>
+                </a><br>
+
+            </div>
+            <div class="cuadrosPagamento">
+                <a href="">
+                    <h4>Más lecturas</h4>
+                </a><br>
+                <a href="">
+                    <p class="estiloA">Biblioteca</p>
+                </a><br>
+            </div>
+            <div id="pagos">
+                <h4> FORMAS DE PAGO </h1>
+                    <div id="pagoTargeta">
+                        <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/visa.png?v=636991622524900000"
+                                alt="visa"></a>
+                        <a href=""><img
+                                src="https://www3.livrariacultura.com.br/arquivos/master.png?v=636991622505470000"
+                                alt="MasterCard"></a>
+                        <a href=""><img
+                                src="https://www3.livrariacultura.com.br/arquivos/american.png?v=636991622435270000"
+                                alt="American Express"></a>
+                        <a href=""><img src="https://www3.livrariacultura.com.br/arquivos/pay.png?v=636991622515770000"
+                                alt="PayPall"></a>
+                        <a href=""><img
+                                src="https://www3.livrariacultura.com.br/arquivos/diners.png?v=636991622465430000"
+                                alt="Dinners"></a>
+
                     </div>
-            
-        
-        
-        </body>
+
+
+            </div>
+            <h5>
+                Libreria BOOK PLUS, todos los derechos reservados.© COPYRIGHT 2020 Bogotá <br>
+                Realizada por <a href="https://github.com/dianaximenacm/Libreria" target="_blank">Grupo Fullstack</a>
+                para
+                <a href="https://www.bictia.com" target="_blank"> Bictia Institute of technology</a>.
+            </h5>
+    </footer>
+    </div>
+
+
+
+</body>
+
 </html>
