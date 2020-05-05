@@ -13,7 +13,10 @@ background-size: cover;
 
 /* Header index */
 
-
+.imagenLogoBig {
+    width: 10%;
+    height: 20%;
+}
 
 
 
