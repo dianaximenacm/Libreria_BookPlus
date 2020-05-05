@@ -5,6 +5,7 @@ class Usuario{
 	public function __construct() {
 
 	}
+
 	// la persona puede ingresar
 	public function nuevoUsuario($email,$password){
 		if(isset($email)&&empty($email)) {
@@ -21,6 +22,13 @@ class Usuario{
 				$db = new Conexion();
 		    	$sql = "INSERT INTO registros (correo,contrasena) VALUES ('$email','$password')";
 		   		$nuevoUsu = $db->query($sql);
+		   		$sql2 = "SELECT @@IDENTITY FROM registros ";
+		   		$posi= $db->query($sql2);
+		   		$posicion = mysqli_fetch_all($posi);
+		   		$posReg = $posicion[0][0];
+                $sql3 = "INSERT INTO usuarios (nombre,apellido,genero,fechaNacimiento,idEstado,idTipoUsuario,idRegistros) VALUES ('nombre','apellido','genero','cumpleaños','1','3','$posReg')";
+		   		$db->query($sql3);
+		   		
 			}
 		}
 		
@@ -45,9 +53,7 @@ class Usuario{
 
 	// actualizar datos
     public function actualizarDatos($nombre,$apellido,$genero,$cumpleaños){
-    	$db = new Conexion();
-    	$sql =" UPDATE usuarios SET nombre = '$nombre',apellido = '$apellido',genero= '$genero',fechaNacimiento='$cumpleaños'  where idUsuario = '2'";
-    	$db->query($sql);
+    	
     }
 	//buscar
 
@@ -94,6 +100,7 @@ class Usuario{
 		    }
 		    setTimeout(redireccionar,500);
 			</script>";
-    }
+        }
 }
+
 ?>
