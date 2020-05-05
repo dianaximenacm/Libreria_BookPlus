@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Old Standard TT', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 90px;
+    color: cornflowerblue;
+    z-index: 100;
+}
+
+.contenedor {
+    margin-bottom: 10px;
+}
+
+.Logo {
+    width: 40%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+.linkLogo {
+    width: 40%;
+    height: 90px;
+}
+
+.imagenLogoBig {
+    width: 100%;
+    height: 90px;
+}
+
+.imagenLogoSmall {
+    display: none;
+}
+
+#botonMenu,
+#iconoMenu {
+    display: none;
+}
+
+.contenedorMenu1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 60%;
+    transition: all 1s;
+}
+
+.menu1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: left;
+    font-size: small;
+}
+
+.contenedorMenu1 .menu1 a {
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    color: cornflowerblue;
+    display: flex;
+    align-items: left;
+    
+}
+
+
+.contenedorMenu2{
+    display: flex;
+    flex-direction: row;
+    transition: all 1s;
+    width: 100%;
+    background-color: #009DAC;
+}
+
+/* buscador*/
+#buscador{
+	background-color: white;
+	width: 23%;
+	height: 23%;
+	margin-top: 2%;
+	margin-left: 3%;
+}
+/*Espacio a la izquierda de la barra de busqueda*/
+#todoSite{
+	background-color:transparent;
+	width: 20%;
+	height: 100%;
+	font-family: nunito;
+	font-size: 50%;
+	color: #06A2AF;
+	border: none;
+	float: left;
+}
+/* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
+#inputBuscar{
+	width: 67%;
+	height: 82%;
+	margin-top: 0.4%;
+	margin-left: 2%;
+	border: none;
+	float: left;
+}
+/* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
+#botonLupa{
+	background-color: transparent;
+    width: 10%;
+    height: 100%;
+    border: none;
+    float: left;
+}
+/* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
+#usuario{
+	background-color: transparent;
+	width: 13%;
+	height: 60%;
+	margin-top: 0.9%;
+	margin-left: 2%;
+	float: left;
+}
+/* Son las letras que dicen bienvenido*/
+#letraOla {
+	width: 65%;
+	height: 40%;
+	margin-top: 5%;
+	font-family: Roboto;
+	font-size: 90%;
+	color: #FFFFFF;
+	float: right;
+}
+/* es el hipervinculo que abre la ventana de registrarse o ingresar"*/
+#letraEntre {
+	width: 65%;
+	height: 40%;
+	margin-top: -16%;
+	font-family: Roboto;
+	font-size: 80%;
+	color: #FFFFFF;
+	float: right;
+}
+/* es el espacio se que le dio al carro de ventas de la paguina*/
+#pedidos{
+   background-color: transparent; 
+   width: 5%;
+   height: 80%;
+   margin-top: 0.5%;
+   margin-left: 2%;
+   float: left;
+}
+
+
+.contenedorMenu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 60%;
+    transition: all 1s;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorMenu .menu a {
+    text-decoration: none;
+    list-style: none;
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    color: cornflowerblue;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenedorMenu .menu li {
+    display: flex;
+    align-items: center;
+}
+
+.contenedorMenu .menu :hover {
+    background-color:  rgba(65, 61, 61, 0.068) ;
+    color:cornflowerblue;
+}
+
+
+@media (max-width:760px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-items: center;
+        align-items: center;
+        background-color: whitesmoke;
+        height: auto;
+    }
+    .Logo {
+        display: flex;
+        width: 80%;
+        height: 70px;
+        flex-direction: row-reverse;
+    }
+    .linkLogo {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .linkLogo .imagenLogoBig {
+        display: none;
+    }
+    .linkLogo .imagenLogoSmall {
+        display: flex;
+        width: 46%;
+    }
+    nav,
+    .contenedorMenu {
+        display: none;
+        transition: all 0.5s;
+    }
+    #iconoMenu {
+        display: flex;
+    }
+    #botonMenu:checked~.contenedorMenu {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: stretch;
+        width: 100%;
+        border-top: 1px solid rgba(65, 61, 61, 0.068);
+    }
+    .menu {
+        display: flex;
+        flex-flow: column wrap;
+        margin-right: 0px;
+        transition: all 1s;
+        width: 100%;
+    }
+    .contenedorMenu .menu a {
+        text-decoration: none;
+        color: cornflowerblue;
+        width: 100%;
+        border-top: 1px solid rgba(65, 61, 61, 0.068);
+        border-bottom: 1px solid rgba(65, 61, 61, 0.068);
+        height: 25px;
+    }
+}
+
+@media (max-width:250px) {
+    .Logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .linkLogo {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+    .imagenLogo {
+        width: 50%;
+        height: 50px;
+    }
+    
+}
+
+@media (max-width:150px) {
+    .Logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .imagenLogo {
+        width: 50%;
+        height: 30px;
+    }
+}
+
+@media (max-width:100px) {
+    .Logo {
+        width: 100%;
+        justify-content: center;
+    }
+    .imagenLogo {
+        width: 80%;
+        height: 20px;
+    }
+}
+
+#logo{
+	background-color: #009DAC;
+	width: 15%;
+	height: 100%;
+
+}
+/* palabra Libreria*/
+#logoLetra{
+	width: 100%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 10%;
+	font-family: sans-serif;
+	font-size: xx-large;
+	color: #FAFAF6;
+}

@@ -1,12 +1,11 @@
-
 /* Slider  */
 
-.sliderdivitext{
-	display: inline-flex;
+.inicio{
+	display: inline-block;
 	background-color: #DDE8F0;
 	box-sizing: content-box;
-	width: 50%;
-	margin-top: 50px;
+	width: 100%;
+	margin-top: 100px;
 
 }
 
@@ -14,11 +13,10 @@
 	font-size: 20px;
 	letter-spacing: 1px;
 	color: #004581;
-	width: 50%;
-	height: 600px;
 	padding: 2px;
 	margin-left: 5px;
-	float: right;
+    float: right;
+    margin-top: 10px;
  }
 
 .tituloslider{
@@ -142,7 +140,7 @@ height: 420px;
     text-shadow: -3px -3px 5px #008698;
     font-family:'Bowlby One SC', cursive; 
     letter-spacing: 4px;
-    margin-top: 200px;
+    
 }
 
 .contentienda{

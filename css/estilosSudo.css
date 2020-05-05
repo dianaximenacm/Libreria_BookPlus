@@ -1,9 +1,8 @@
-/* estilos del body del documento*/
 * {
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+    padding: 0;
+    margin: 0;
 }
+
 
 /* contenedor de todos los nav*/
 
@@ -14,9 +13,9 @@
     float: left;
 }
 
+
 /* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/
 
-;
 #priNav {
     background-color: #009DAC;
     width: 100%;
@@ -41,6 +40,7 @@ li {
     font-family: Roboto, sans-serif;
     font-size: 80%;
     color: white;
+    float: left;
 }
 
 #priLi {
@@ -48,12 +48,13 @@ li {
     float: left;
 }
 
+
 /* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
 
 #segNav {
     background-color: #009DAC;
     width: 100%;
-    height: 50%;
+    height: 100% !important;
     float: left;
 }
 
@@ -79,10 +80,11 @@ li {
     height: 18%;
 }
 
+
 /* palabra Livaria Cultura*/
 
 #logoLetra {
-    width: 150% !important;
+    width: 500% !important;
     height: 350% !important;
     margin-top: -28%;
     margin-left: -15%;
@@ -91,16 +93,18 @@ li {
     color: #FAFAF6;
 }
 
+
 /* buscador de la paguina web*/
 
 #buscador {
-	background-color: white;
-	width: 32%;
-	height: 60%;
-	margin-top: 0.8%;
-	margin-left: 1%;
-	float: left;
+    background-color: white;
+    width: 32%;
+    height: 60%;
+    margin-top: 0.8%;
+    margin-left: 1%;
+    float: left;
 }
+
 
 /*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
 
@@ -115,6 +119,7 @@ li {
     float: left;
 }
 
+
 /* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
 
 #inputBuscar {
@@ -126,6 +131,7 @@ li {
     float: left;
 }
 
+
 /* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
 
 #botonLupa {
@@ -135,6 +141,7 @@ li {
     border: none;
     float: left;
 }
+
 
 /* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
 
@@ -147,17 +154,25 @@ li {
     float: right;
 }
 
+
 /* Son las letras que dicen Ola, bem vindo(a)*/
 
-#letraOla {
+.letraOla {
     width: 65%;
     height: 40%;
-    margin-top: 5%;
     font-family: Roboto;
     font-size: 90%;
     color: #FFFFFF;
-    float: right;
 }
+
+.letraOlaDos {
+    width: 65%;
+    height: 40%;
+    font-family: Roboto;
+    font-size: 90%;
+    color: #FFFFFF;
+}
+
 
 /* tercer contenedor del nav*/
 
@@ -165,7 +180,9 @@ li {
     background-color: #FAFAF6;
     width: 100%;
     float: left;
+    margin-bottom: 1%;
 }
+
 
 /* clase que se para caracterizar los opciones de esta zona del nav*/
 
@@ -176,6 +193,7 @@ li {
     margin-right: 0.5%;
     float: left;
 }
+
 
 /* caracteristica de la lista accioes del super administrador*/
 
@@ -233,6 +251,7 @@ li {
     opacity: 1;
 }
 
+
 /* Perfil */
 
 .perfil {
@@ -244,6 +263,7 @@ li {
     border-radius: 50%;
 }
 
+
 /*Consulta de producto*/
 
 .consultarProd {
@@ -251,27 +271,27 @@ li {
 }
 
 .btnForm {
-    background-color: #009DAC;
-    width: 20%;
-    height: 60%;
-    margin-top: 3%;
-    margin-left: 0.5%;
-    font-family: Roboto;
-    font-size: 100%;
-    color: white;
-    border-radius: 2px;
-    float: left;
+    background: #93D4FF;
+    border: none;
+    outline: none;
+    height: 40%;
+    color: black;
+    font-size: 142%;
+    border-radius: 80%;
+    margin-top: 5%;
+    padding: 10% 0 10% 0;
 }
+
 
 /*Agregar Prod*/
 
 #principal {
     background-image: url('https://cdn.pixabay.com/photo/2016/07/22/16/29/fog-1535201__340.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 190%;
     background-position: inherit;
     width: 100%;
-    height: 150%;
+    height: 80%;
     margin-top: 8%;
     float: left;
 }
@@ -303,12 +323,9 @@ li {
     margin: 10% 10% 10% 0;
     padding: 4% 10%;
     background: #EBFDE3;
-    height: 18%;
     overflow: auto;
     width: 20%;
-    margin-top: 10%;
     float: right;
-    margin-right: 10%;
 }
 
 .camposDos:target {
@@ -321,8 +338,6 @@ li {
     background: #EBFDE3;
     width: 20%;
     float: right;
-    height: 18%;
-    overflow: auto;
 }
 
 .camposDos {
@@ -330,7 +345,16 @@ li {
     display: none;
 }
 
+#banner {
+    float: left;
+    margin: 10% 0 0 7%;
+    position: sticky !important;
+    top: 2%;
+}
+
+
 /*--------------------------------------------------------------------------------*/
+
 
 /* footer de mi paguina */
 
@@ -383,7 +407,7 @@ footer {
 
 #botCorreo {
     background-color: transparent;
-    width: 20%;
+    width: 15%;
     height: 60%;
     margin-top: 3%;
     margin-left: 0.5%;
@@ -477,5 +501,3 @@ h5 {
     margin-left: 15%;
     color: #664664AF;
 }
-
-
