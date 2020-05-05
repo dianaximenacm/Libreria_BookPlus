@@ -1,0 +1,548 @@
+/* estilos del body del documento*/
+body{
+	width: 1600px;
+	height: 1200px;
+	margin: auto;
+
+}
+/* contenedor de todos los nav*/
+#contNav{
+	background-color: #008698;
+	width: 100%;
+	height: 13%;
+	float: left;
+}
+/* primer nav :Lojas, Atendimientos e Telenovelas, Vendas corporativa*/;
+#priNav{
+	background-color: #009DAC;
+	width: 100%;
+	height: 20%;
+	float: left;
+}
+
+ul{
+	width: 90%;
+	height: 80%;
+	margin-top: 0.1%;
+	margin-left: 10%;
+	text-decoration: none;
+	float: left;
+}
+
+li{
+	display: inline-block;
+	margin-top: 0.3%;
+	margin-right: 1%;
+	padding: 0 0 1px;
+	font-family: Roboto, sans-serif;
+	font-size: 80%;
+	color: white;
+	float: left;
+}
+
+#priLi{
+	margin-left: 50%;
+	float: left;
+}
+/* segundo nav: livaria Cultura,barra de busqueda, entre o cadestrece, carrito de compras;*/
+#segNav{
+	background-color: #009DAC;
+	width: 100%;
+	height: 50%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;	
+	float: left;
+}
+
+#logo{
+	background-color: #009DAC;
+	width: 20%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+}
+/* palabra Livaria Cultura*/
+#logoIma{
+	width: 20%;
+	height: 80%;
+	margin-top: 2%;
+	margin-left: 2%;
+	float: left;
+}
+
+#logoLetra{
+	width: 60%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 2%;
+	font-family: sans-serif;
+	font-size: xx-large;
+	color: #FAFAF6;
+	float: left;
+}
+/* buscador de la paguina web*/
+#buscador{
+	background-color: white;
+	width: 32%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 1%;
+	float: left;
+}
+
+
+/*Espacio a la izquierda de la barra de busqueda, que dice TODO O SITE*/
+#todoSite{
+	background-color:transparent;
+	width: 20%;
+	height: 100%;
+	font-family: nunito;
+	font-size: 75%;
+	color: #06A2AF;
+	border: none;
+	float: left;
+}
+/* Es el input del buscador, se usa para poder tomar los datos que ingresen de busqueda*/
+#inputBuscar{
+	width: 67%;
+	height: 82%;
+	margin-top: 0.4%;
+	margin-left: 2%;
+	text-align: center;
+	font-size: 140%;
+	border: none;
+	float: left;
+}
+
+#formBuscador{
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+/* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
+#botonLupa{
+	background-color: transparent;
+    width: 10%;
+    height: 100%;
+    border: none;
+    float: left;
+}
+/* es el contenedor que se usa para los datos usuario, donde puedes ingresar o registrarse*/
+#usuario{
+	background-color: transparent;
+	width: 10%;
+	height: 60%;
+	margin-top: 0.9%;
+	margin-left: 2%;
+	float: left;
+}
+/* Son las letras que dicen Ola, bem vindo(a)*/
+#letraOla {
+	width: 65%;
+	height: 80%;
+	margin-top: 5%;
+	font-family: Roboto;
+	font-size: 90%;
+	color: #FFFFFF;
+	float: right;
+}
+
+/* es el espacio se que le dio al carro de ventas de la paguina*/
+#pedidos{
+   background-color: transparent; 
+   width: 5%;
+   height: 80%;
+   margin-top: 0.5%;
+   margin-left: 2%;
+   float: left;
+}
+
+#cerrarSes{
+	background-color: transparent;
+	width: 5%;
+	height: 60%;
+	margin-top: 1.5%;
+	font-family: sans-serif;
+	font-size: 120%;
+	color: white;
+	float: left;
+}
+/* tercer contenedor del nav*/
+#terNav{
+	background-color: #FAFAF6;
+	width: 100%;
+	height: 30%;
+	float: left;
+}
+
+#formDatosusu{
+	background-color: #009DAC88;
+	width: 15%;
+	height: 50%;
+	display: none;
+	margin-top: 7%;
+	margin-left: 15%;
+	position: absolute; 
+}
+#datosForm{
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	float: left;
+}
+#fotoAct{
+	background-image: url('https://cdn.pixabay.com/photo/2016/04/15/18/05/computer-1331579__340.png');
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-position: center;
+	background-size: cover;
+	width:60%;
+	height: 40%;
+	margin-top: 2%;
+	margin-left: 20%;
+	float: left;
+}
+
+.inputDatusu{
+	width: 90%;
+	height: 8%;
+	margin-top: 2%;
+	margin-left: 5%;
+	text-align: center;
+	float: left;
+}
+
+.botnavUsuario{
+    background-color: transparent;
+	width: 65%;
+	height: 90%;
+	margin-top: 3%;
+	font-size: 100%;
+	text-align: center;
+	border: none;
+	float: left;
+}
+/* clase que se para caracterizar los opciones de esta zona del nav*/ 
+.iconosNav{
+	background-color: #FAFAF6;
+	width: 15%;
+	height: 100%;
+	margin-right: 0.5%;
+	float: left;
+}
+/* primera opcion de las listas del nav, compre por categorias*/ 
+#compreCat{
+	margin-left: 12%;
+	float: left;
+}
+/* caracteristica de la lista compre por categorias*/
+#compreCat li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	text-align: center;
+	color: #009ADC;
+}
+
+#ExploreCul li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: red;
+}
+
+/* este estilo es de cultura indica lista nav3*/
+#culturaLis li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+/* este estilo es de central de ofertas nav3*/
+#centralOfer li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+/* este estilo es para eventos nav3*/
+#eventos li{
+	margin-top: 5%;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: #44525D;
+}
+
+
+
+/*------------------------------------------------ codigo a cambiar--------------*/
+#principal{
+	background-image: url('https://cdn.pixabay.com/photo/2017/12/22/08/01/literature-3033196_1280.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	background-attachment: fixed;
+	width: 90%;
+	height: 100%;
+	margin-top: 1%;
+	margin-left: 5%;
+	float:left;
+}
+
+#carnet{
+	background-color: white;
+	width: 40%;
+	height: 30%;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 3%;
+	border-radius: 10px;
+	border:2px solid #1718184F;
+	float:left;
+}
+
+#catUsuario{
+	background-color: transparent;
+	width : 90%;
+	height: 260px;
+	margin-top: 80px;
+	margin-left: 5%;
+	float: left;
+}
+
+.categorias{
+	background-image: url('https://cdn.pixabay.com/photo/2012/04/24/23/49/book-41203__340.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: scroll;
+	width: 18%;
+	height: 90%;
+	margin-left: 2%;
+	float: left;
+}
+
+.catBotones{
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	font-size: 200%;
+	color: white;
+	border: none;
+}
+
+#izqCarnet{
+	width: 30%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 7%;
+	float: left;
+}
+	
+#derCarnet{
+	width: 50%;
+	height: 80%;
+	margin-top: 5%;
+	margin-left: 6%;
+	float: left;
+}
+
+#foto{
+	background-color: #17181824;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 90%;
+	height: 70%;
+	margin-top: 3%;
+	margin-left: 5%;
+	margin-bottom: 4%;
+	border-radius: 10%;
+	float: left;
+
+}
+
+#nomLibreria{
+	width: 90%;
+	height: 20%;
+	margin-top: 5%;
+	margin-left: 5%;
+	float: left;
+}
+
+.datCarnet{
+	background-color: #17181812;
+	width: 90%;
+	height: 15%;
+	margin-top: 20px;
+	margin-left: 5%;
+	font-family: sans-serif;
+	font-size: 120%;
+	text-align: center;
+	border-radius: 10px;
+	float: left;
+}
+
+#contenedorBus{
+	background-color: rgba(255,255,255,0.3);
+	width: 90%;
+	height: 40%;
+	margin-left: 5%;
+	float: left;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/* footer de mi paguina */
+footer{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 30%;
+	margin-top: 1%;
+	float: left;
+}
+
+#redSocial{
+	background-color: #009DAC;
+	width: 100%;
+	height: 15%;
+	float:  left;
+}
+
+#letrasRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 60%;
+	margin-top: 0.8%;
+	margin-left: 12%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+#emailRed{
+	background-color: #009DAC;
+	width: 25%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 120%;
+	float: left;
+}
+
+#digEmail{
+	width: 80%;
+	height: 40%;
+	margin-top: 4%;
+	font-family: Roboto;
+	font-size: 100%;
+	border-radius: 2px;
+	float: left;
+}
+#botCorreo{
+	background-color: transparent;
+    width: 15%;
+	height: 60%;
+	margin-top: 3%;
+	margin-left: 0.5%;
+	font-family: Roboto;
+	font-size: 100%;
+	color: white;
+	border-radius: 2px;
+	float: left;
+}
+
+#letraRed{
+	background-color: #009DAC;
+	width: 10%;
+	height: 60%;
+	margin-top: 1.2%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size :100%;
+	float: left;
+}
+#iconosRed{
+	background-color: #009DAC;
+	width: 20%;
+	height: 100%;
+	color: #FFFFFF;
+	font-family: Roboto;
+	font-size: 100%;
+	float: left;
+}
+
+.icono{
+	background-color: transparent;
+	width: 10%;
+	height: 15%;
+	margin-top: 6%;
+	margin-left: 10%;
+	float: left;
+}
+#pagamenServicio{
+   background-color: rgba(255,255,245,0.8);
+   width: 100%;
+   height: 60%;
+   float:  left;
+
+}
+
+.cuadrosPagamento{
+	width: 16%;
+	height: 100%;
+	float: left;
+}
+
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 100%;
+	color: black;
+}
+
+.estiloA{
+	width: 100%;
+	height: 2%;
+	margin-top: 2%;
+}
+
+h4{
+	margin-top: 2%;
+	margin-bottom: 1%;
+	font-family: sans-serif;
+	color: #009DAC;
+}
+#pagos{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#pagoTargeta{
+	background-color: transparent;
+	width: 95%;
+	height : 4%;
+	margin-top: 5%;
+	margin-left: 2.5%;
+	margin-right: 5%;
+	float: left;
+}
+
+#bancosAcei{
+	background-color: transparent;
+	width: 100%;
+	height : 25%;
+	margin-top: 10%;
+	float: left;
+}
+
+#derechos{
+	width: 100%;
+	height: 10%;
+	float: left;
+}
+h5{
+	margin-top: 2%;
+	margin-left: 35%;
+	color: #664664AF;
+}
