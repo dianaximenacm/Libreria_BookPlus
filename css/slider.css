@@ -1,5 +1,10 @@
 /* Slider  */
-
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Old Standard TT', serif;
+}
 .inicio{
 	display: inline-block;
 	background-color: #DDE8F0;
@@ -24,7 +29,6 @@
 	text-align: left;
 	font-size: 15px;
 	padding: 35px 0 15px 0;
-	font-family: open sans;
 	letter-spacing: 3px;
 }
 

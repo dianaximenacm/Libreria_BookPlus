@@ -1,9 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 * {
+	margin: 0;
     padding: 0;
-    margin: 0;
-    font-family:'Old Standard TT', serif;
 }
 
+body {
+	background-image: url('../files/fondo.webp');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+.fondo {
+	opacity: 0.6;
+}
 
 header {
     display: flex;
@@ -12,9 +24,10 @@ header {
     justify-content: space-around;
     background-color: whitesmoke;
     width: 100%;
-    height: 90px;
     color: cornflowerblue;
     z-index: 100;
+    font-size: 1em;
+    font-family:Segoe Print;
 }
 
 .contenedor {
@@ -35,8 +48,8 @@ header {
 }
 
 .imagenLogoBig {
-    width: 90%;
-    height: 90px;
+    width: 50%;
+    margin-left: 2rem;
 }
 
 .imagenLogoSmall {
@@ -91,14 +104,14 @@ header {
 	width: 23%;
 	height: 23%;
 	margin-top: 2%;
-	margin-left: 3%;
+    margin-left: 3%;
+    font-size: 2em;
 }
 /*Espacio a la izquierda de la barra de busqueda*/
 #todoSite{
 	background-color:transparent;
 	width: 20%;
 	height: 100%;
-	font-family: nunito;
 	font-size: 50%;
 	color: #06A2AF;
 	border: none;
@@ -108,10 +121,7 @@ header {
 #inputBuscar{
 	width: 67%;
 	height: 82%;
-	margin-top: 0.4%;
-	margin-left: 2%;
-	border: none;
-	float: left;
+    border: 0ch;
 }
 /* Este es la imagen de la lupa donde le puedes dar click para buscar los datos ingresados*/
 #botonLupa{
@@ -136,9 +146,9 @@ header {
 	height: 40%;
 	margin-top: 5%;
 	font-family: Roboto;
-	font-size: 90%;
 	color: #FFFFFF;
-	float: right;
+    float: right;
+    font-size: 2em;
 }
 /* es el hipervinculo que abre la ventana de registrarse o ingresar"*/
 #letraEntre {
@@ -146,9 +156,9 @@ header {
 	height: 40%;
 	margin-top: -16%;
 	font-family: Roboto;
-	font-size: 80%;
 	color: #FFFFFF;
-	float: right;
+    float: right;
+    font-size: 1em;
 }
 /* es el espacio se que le dio al carro de ventas de la paguina*/
 #pedidos{
@@ -187,7 +197,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
-    
+    font-family: Segoe Print;
 }
 
 .contenedorMenu .menu li {

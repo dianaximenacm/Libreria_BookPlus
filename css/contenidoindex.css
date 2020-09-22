@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Aguafina+Script|Artifika|Athiti|Condiment|Dosis|Droid+Serif|Farsan|Gurajada|Josefin+Sans|Lato|Lora|Merriweather|Noto+Serif|Open+Sans+Condensed:300|Playfair+Display|Rasa|Sahitya|Share+Tech|Text+Me+One|Titillium+Web');
 /* Slider  */
 
 .sliderdivitext {
@@ -39,11 +40,12 @@
 }
 
 p {
-    font-family: open sans;
+    font-family: segoe print; 
     font-size: 22px;
     color: #008698;
     letter-spacing: 1px;
     text-align: center;
+    text-shadow: -3px -3px 5px white;
 }
 
 .slider {
